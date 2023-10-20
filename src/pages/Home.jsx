@@ -12,12 +12,12 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       <CustomNavbar />
       <CustomCarousel selectedCity={selectedCity} handleChange={handleChange} />
       <ActivitiesContainer selectedCity={selectedCity} />
       <WhatsappBtn />
       <Footer />
-    </div>
+    </>
   );
 }

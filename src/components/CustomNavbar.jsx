@@ -9,7 +9,7 @@ export default function CustomNavbar() {
   return (
     <Navbar bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home" className="">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             className="image-thumbnail align-top"
