@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function Activity() {
   const { activityID } = useParams();
-  const activity = activityData[activityID];
+  const activity = activityData[1];
   return (
     <>
       <CustomNavbar />
@@ -19,7 +19,7 @@ export default function Activity() {
               <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
               <Breadcrumb.Item href="/">Activity</Breadcrumb.Item>
               <Breadcrumb.Item active>
-                Activity: {activity.title}
+                Activity: {activity?.title}
               </Breadcrumb.Item>
             </Breadcrumb>
           </Col>
@@ -37,17 +37,17 @@ export default function Activity() {
         </Carousel>
         <div className="text-container">
           <span className="display-6 fw-bold mb-0 heading">
-            {activity.title}
+            {activity?.title}
           </span>
         </div>
         <div className="text-container mt-3">
           <span className="fw-bold fs-3  ps-2 subheading">
             About the experience
           </span>
-          {activity.about.map((e, idx) => (
+          {activity?.about.map((e, idx) => (
             <div key={idx}>
-              <p className="fw-bold">{e.title}</p>
-              <p>{e.content}</p>
+              <p className="fw-bold">{e?.title}</p>
+              <p>{e?.content}</p>
             </div>
           ))}
         </div>
