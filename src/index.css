@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
+  background-color: #f8f9fa !important;
+}
+
+.card {
+  box-shadow: #fbeff1 1.95px 1.95px 2.6px;
+  border: none;
+}
+
+.activityBtn {
+  background-color: #8a6a9e !important;
+  border: 2px solid #fbeff1 !important;
+  transition: tranform 0.3s;
+}
+
+.activityBtn:hover {
+  transform: scale(1);
+  border: 4px solid #fbeff1 !important;
+}
+
+.whatsappBtn {
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25d366 !important;
+  border: none !important;
+}
+
+.footer {
+  background-color: #fbeff1;
+  color: #7b69ac;
+}
+
+.social-container > div > a > i {
+  color: #7b69ac;
+  font-size: 25px;
+}
+
+.location-select {
+  position: relative;
+  top: -5rem;
+  width: 20% !important;
+}
+
+.input-group-text {
+  background-color: white !important;
+  border: 2px solid #8a6a9e !important;
+  border-right: none !important;
+}
+
+.form-select {
+  border: 2px solid #8a6a9e !important;
+  border-left: none !important;
+  color: #7b69ac !important;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+  border: #8a6a9e;
+}
+
+.bi-geo-alt-fill {
+  color: #7b69ac;
+}
+
+@media only screen and (max-width: 400px) {
+  .location-select {
+    width: 50% !important;
+  }
+}

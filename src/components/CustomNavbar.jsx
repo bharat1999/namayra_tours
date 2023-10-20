@@ -3,25 +3,23 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+import logo from "../assets/logo_name_tagline.png";
+
 export default function CustomNavbar() {
   return (
-    <Navbar bg="white" data-bs-theme="light">
+    <Navbar bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className="">
           <img
-            src="https://picsum.photos/200/100"
-            className="d-inline-block align-top"
+            src={logo}
+            className="image-thumbnail align-top"
             alt="React Bootstrap logo"
+            width="150vmax%"
           />
         </Navbar.Brand>
-        <Nav className="d-flex">
+        <Nav className="me-5">
           <Nav.Item href="#">
-            <DropdownButton
-              variant="light"
-              id="helpline-dropdown"
-              title="Helpline button"
-              size="sm"
-            >
+            <DropdownButton variant="light" title="Helpline" size="sm">
               <Dropdown.Item as="button">India +91 1234567890</Dropdown.Item>
               <Dropdown.Item as="button">India +91 1234567890</Dropdown.Item>
             </DropdownButton>

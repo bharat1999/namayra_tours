@@ -1,18 +1,30 @@
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Button } from "react-bootstrap";
 
-import activities from "../data/activities";
+import activitiesCategories from "../data/activities";
 
-export default function ActivitiesContainer() {
-  console.log(activities);
+import PropTypes from "prop-types";
+
+ActivitiesContainer.propTypes = {
+  selectedCity: PropTypes.string,
+};
+
+export default function ActivitiesContainer({ selectedCity }) {
   return (
     <Container>
-      {activities.map((activity, idx) => (
+      {activitiesCategories[selectedCity].map((category, idx) => (
         <Container className="mt-4 px-5" key={idx}>
-          <p className="display-7 fw-bold mb-0">{activity.title}</p>
-          <p className="display-8 text-muted fw-light">{activity.subtitle}</p>
-          <Row className="my-3">
-            {activity.activities.map((activity, idx) => (
-              <Col key={idx} className="d-flex justify-content-center">
+          <p className="display-6 fs-5 fw-bold mb-0">{category.heading}</p>
+          <p className="display-6 fs-6 text-muted fw-light fst-italic">
+            {category.subheading}
+          </p>
+          <Row className="mb-5">
+            {category.activities.map((activity) => (
+              <Col
+                key={activity.key}
+                className="d-flex mt-4 justify-content-center"
+                xs="auto"
+                lg={true}
+              >
                 <Card style={{ width: "100%" }}>
                   <Card.Img
                     height="150px"
@@ -20,14 +32,29 @@ export default function ActivitiesContainer() {
                     variant="top"
                     src={activity.image}
                   />
-                  <Card.Body>
-                    <Card.Title>{activity.title}</Card.Title>
-                    <Card.Text className="pt-5">
-                      <span className="text-muted">
-                        <i className="bi bi-clock-fill"></i>
-                        <span className="mx-3">{activity.duration}</span>
-                      </span>
+                  <Card.Body className="pb-0">
+                    <Card.Title className="fs-6">{activity.title}</Card.Title>
+                    <Card.Text className="pt-3 mb-0">
+                      <div className="d-flex text-muted justify-content-between">
+                        <span>
+                          <i className="bi bi-clock-fill"></i>
+                          <span className="mx-2">{activity.duration}</span>
+                        </span>
+                        <span>
+                          <p className="fw-bold fst-italic">
+                            AED: {activity.price}
+                          </p>
+                        </span>
+                      </div>
                     </Card.Text>
+                    <div className="text-center mb-3">
+                      <Button
+                        className="activityBtn"
+                        href={`activity/${activity.key}`}
+                      >
+                        View Detail
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
