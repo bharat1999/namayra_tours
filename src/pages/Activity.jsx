@@ -1,5 +1,5 @@
 import { Breadcrumb, Carousel, Col, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+//import { useParams } from "react-router-dom";
 import CustomNavbar from "../components/CustomNavbar";
 
 import activityData from "../data/activity";
