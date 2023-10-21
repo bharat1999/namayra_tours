@@ -6,18 +6,20 @@ import activityData from "../data/activity";
 import Footer from "../components/Footer";
 
 export default function Activity() {
-  const { activityID } = useParams();
+  //const { activityID } = useParams();
   const activity = activityData[1];
   return (
     <>
       <CustomNavbar />
       <div className="activity-container">
         <Row>
-          <Col></Col>
-          <Col className="d-flex justify-content-end">
+          <Col xs={0} sm={0}></Col>
+          <Col
+            xs={12}
+            className="d-flex justify-content-start justify-content-lg-end"
+          >
             <Breadcrumb>
               <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="/">Activity</Breadcrumb.Item>
               <Breadcrumb.Item active>
                 Activity: {activity?.title}
               </Breadcrumb.Item>

@@ -17,11 +17,16 @@ export default function CustomNavbar() {
             width="150vmax%"
           />
         </Navbar.Brand>
-        <Nav className="me-5">
+        <Nav className="me">
           <Nav.Item href="#">
-            <DropdownButton variant="light" title="Helpline" size="sm">
-              <Dropdown.Item as="button">India +91 1234567890</Dropdown.Item>
-              <Dropdown.Item as="button">India +91 1234567890</Dropdown.Item>
+            <DropdownButton
+              align="end"
+              variant="light"
+              title="Helpline"
+              size="sm"
+            >
+              <Dropdown.Item>India +91 1234567890</Dropdown.Item>
+              <Dropdown.Item>India +91 1234567890</Dropdown.Item>
             </DropdownButton>
           </Nav.Item>
         </Nav>
