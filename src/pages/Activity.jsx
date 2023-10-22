@@ -1,7 +1,7 @@
 import { Breadcrumb, Carousel, Col, Row } from "react-bootstrap";
 //import { useParams } from "react-router-dom";
 import CustomNavbar from "../components/CustomNavbar";
-
+import WhatsappBtn from "../components/WhatsappBtn";
 import activityData from "../data/activity";
 import Footer from "../components/Footer";
 
@@ -62,7 +62,7 @@ export default function Activity() {
           </ul>
         </div>
       </div>
-
+      <WhatsappBtn />
       <Footer />
     </>
   );
