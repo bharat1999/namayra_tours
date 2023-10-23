@@ -8,13 +8,16 @@ ActivityCard.propTypes = {
 
 export default function ActivityCard({ activity }) {
   const [isCarouselActive, setCarousel] = useState(false);
+  const [carouselActiveInterval, setCarouselInterval] = useState(100000);
 
   function activateCarousel() {
     setCarousel(true);
+    setCarouselInterval(1500);
   }
 
   function deactivateCarousel() {
     setCarousel(false);
+    setCarouselInterval(100000);
   }
 
   return (
@@ -22,7 +25,7 @@ export default function ActivityCard({ activity }) {
       key={activity.key}
       className="d-flex mt-4 justify-content-center"
       xs="auto"
-      lg={true}
+      lg={3}
     >
       <Card
         style={{ width: "100%" }}
@@ -30,55 +33,45 @@ export default function ActivityCard({ activity }) {
         onMouseOut={deactivateCarousel}
       >
         <Carousel
-          interval={1500}
+          interval={carouselActiveInterval}
           indicators={false}
           controls={false}
           slide={isCarouselActive}
           pause={false}
+          touch={true}
         >
-          <Carousel.Item>
-            <Card.Img
-              height="150px"
-              width="150px"
-              variant="top"
-              src={activity.image}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Card.Img
-              height="150px"
-              width="150px"
-              variant="top"
-              src={activity.image}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Card.Img
-              height="150px"
-              width="150px"
-              variant="top"
-              src={activity.image}
-            />
-          </Carousel.Item>
+          {activity.images.map((image, idx) => (
+            <Carousel.Item key={idx}>
+              <Card.Img
+                height="150px"
+                width="300px"
+                variant="top"
+                src={image}
+              />
+            </Carousel.Item>
+          ))}
         </Carousel>
         <Card.Body className="pb-0">
           <Card.Title className="fs-6">{activity.title}</Card.Title>
           <Card.Text className="pt-3 mb-0">
-            <div className="d-flex text-muted justify-content-between">
-              <span>
-                <i className="bi bi-clock-fill"></i>
-                <span className="mx-2">{activity.duration}</span>
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <span style={{ "font-size": ".7rem" }}>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
               </span>
-              <span>
-                <p className="fw-bold fst-italic">AED: {activity.price}</p>
-              </span>
+              <div className="text-center">
+                <Button
+                  className="activityBtn"
+                  href={`activity/${activity.key}`}
+                >
+                  View Detail
+                </Button>
+              </div>
             </div>
           </Card.Text>
-          <div className="text-center mb-3">
-            <Button className="activityBtn" href={`activity/${activity.key}`}>
-              View Detail
-            </Button>
-          </div>
         </Card.Body>
       </Card>
     </Col>

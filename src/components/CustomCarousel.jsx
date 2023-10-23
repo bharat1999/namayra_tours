@@ -7,23 +7,27 @@ CustomCarousel.propTypes = {
   handleChange: PropTypes.func,
 };
 
+import img1 from "../assets/home/Desert Safari.webp";
+import img2 from "../assets/home/Miracle Garden Dubai.webp";
+import img3 from "../assets/home/Museum Of The Future.webp";
+
 export default function CustomCarousel({ selectedCity, handleChange }) {
   return (
     <Container fluid className="px-0">
       <Carousel
         indicators={false}
         controls={false}
-        slide="true"
+        slide={true}
         interval="3000"
       >
         <Carousel.Item>
-          <img src="https://picsum.photos/1920/400" />
+          <img className="home-carousel-image" src={img1} width="100%" />
         </Carousel.Item>
         <Carousel.Item>
-          <img src="https://picsum.photos/1920/400" />
+          <img className="home-carousel-image" src={img2} width="100%" />
         </Carousel.Item>
         <Carousel.Item>
-          <img src="https://picsum.photos/1920/400" />
+          <img className="home-carousel-image" src={img3} width="100%" />
         </Carousel.Item>
       </Carousel>
       <Container className="location-select">

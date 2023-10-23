@@ -1,13 +1,19 @@
-import { Breadcrumb, Carousel, Col, Row } from "react-bootstrap";
+import { Breadcrumb, Button, Carousel, Col, Modal, Row } from "react-bootstrap";
 //import { useParams } from "react-router-dom";
 import CustomNavbar from "../components/CustomNavbar";
 import WhatsappBtn from "../components/WhatsappBtn";
 import activityData from "../data/activity";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 export default function Activity() {
   //const { activityID } = useParams();
   const activity = activityData[1];
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <CustomNavbar />
@@ -37,6 +43,9 @@ export default function Activity() {
             <img src="https://picsum.photos/1920/400" />
           </Carousel.Item>
         </Carousel>
+        <div className="enquiry-btn">
+          <Button onClick={handleShow}>Enquiry</Button>
+        </div>
         <div className="text-container">
           <span className="display-6 fw-bold mb-0 heading">
             {activity?.title}
@@ -64,6 +73,21 @@ export default function Activity() {
       </div>
       <WhatsappBtn />
       <Footer />
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Enquiry</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Send
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }

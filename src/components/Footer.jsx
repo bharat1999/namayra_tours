@@ -1,12 +1,12 @@
 import { Container, Image } from "react-bootstrap";
 
-import logo from "../assets/name_tagline.png";
+import logo from "../assets/logo/logo_name_tagline.png";
 
 export default function Footer() {
   return (
     <Container fluid className="p-5 footer">
       <Container className="d-flex justify-content-center">
-        <Image src={logo} width="50%" />
+        <Image src={logo} />
       </Container>
       <Container className="mt-3 social-container d-flex justify-content-center gap-3">
         <div>
