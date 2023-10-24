@@ -28,7 +28,7 @@ export default function ActivityCard({ activity }) {
       lg={3}
     >
       <Card
-        style={{ width: "100%" }}
+        style={{ width: "300px" }}
         onMouseOver={activateCarousel}
         onMouseOut={deactivateCarousel}
       >
@@ -43,9 +43,10 @@ export default function ActivityCard({ activity }) {
           {activity.images.map((image, idx) => (
             <Carousel.Item key={idx}>
               <Card.Img
+                className="bottom-border-radius-0"
                 height="150px"
-                width="300px"
-                variant="top"
+                width="100%"
+                variant=""
                 src={image}
               />
             </Carousel.Item>
@@ -53,8 +54,8 @@ export default function ActivityCard({ activity }) {
         </Carousel>
         <Card.Body className="pb-0">
           <Card.Title className="fs-6">{activity.title}</Card.Title>
-          <Card.Text className="pt-3 mb-0">
-            <div className="d-flex justify-content-between align-items-center mb-3">
+          <Card.Text className="mb-0">
+            <div className="d-flex justify-content-between align-items-center mb-2">
               <span style={{ "font-size": ".7rem" }}>
                 <i className="bi bi-star-fill"></i>
                 <i className="bi bi-star-fill"></i>

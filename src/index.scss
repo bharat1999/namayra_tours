@@ -1,10 +1,32 @@
+@font-face {
+  font-family: "Exodar"; /*Can be any text*/
+  src: local("Exodar-Outline"),
+    url("./fonts/Exodar-Outline.ttf") format("truetype");
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif !important;
   background-color: #f8f9fa !important;
 }
 
+.bottom-border-radius-0 {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.navbar {
+  background-color: #fbeff1 !important;
+}
+
+.brand-name-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .brand-name {
+  font-family: "Exodar";
   color: #7b69ac;
+  font-weight: 700;
 }
 
 .home-carousel-image {
@@ -114,13 +136,19 @@ body {
   color: #7b69ac;
 
   img {
-    width: 20%;
+    width: 10%;
   }
 }
 
-.social-container > div > a > i {
-  color: #7b69ac;
-  font-size: 25px;
+.social-container {
+  i {
+    color: #7b69ac;
+    font-size: 25px;
+  }
+
+  i:hover {
+    color: #615387;
+  }
 }
 
 .location-select {
