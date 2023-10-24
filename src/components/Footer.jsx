@@ -1,6 +1,6 @@
 import { Container, Image } from "react-bootstrap";
 
-import logo from "../assets/logo/logo.png";
+import logo from "../assets/logo/logo.webp";
 
 export default function Footer() {
   return (
