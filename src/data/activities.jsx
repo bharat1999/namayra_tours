@@ -1,32 +1,34 @@
-import burj_al_arab_1 from "../assets/small_images/Burj Al Arab Tour 1.webp";
-import burj_al_arab_2 from "../assets/small_images/Burj Al Arab Tour 2.webp";
-import burj_al_arab_3 from "../assets/small_images/Burj Al Arab Tour 3.webp";
-import burj_khalifa_1 from "../assets/small_images/Burj Khalifa 1.webp";
-import burj_khalifa_2 from "../assets/small_images/Burj Khalifa 2.webp";
-import burj_khalifa_3 from "../assets/small_images/Burj Khalifa 4.webp";
-import desert_safari_1 from "../assets/small_images/Desert Safari 1.webp";
-import desert_safari_2 from "../assets/small_images/Desert Safari 2.webp";
-import dubai_aquarium_1 from "../assets/small_images/Dubai Aquarium And Underwater Zoo 1.webp";
-import dubai_aquarium_2 from "../assets/small_images/Dubai Aquarium And Underwater Zoo 2.webp";
-import dubai_aquarium_3 from "../assets/small_images/Dubai Aquarium And Underwater Zoo 3.webp";
-import dubai_dophinarium_1 from "../assets/small_images/Dubai Dolphinarium 1.webp";
-import dubai_dophinarium_2 from "../assets/small_images/Dubai Dolphinarium 2.webp";
-import dubai_dophinarium_3 from "../assets/small_images/Dubai Dolphinarium 3.webp";
-import dubai_frame_1 from "../assets/small_images/Dubai Frame 1.webp";
-import dubai_frame_2 from "../assets/small_images/Dubai Frame 2.webp";
-import dubai_frame_3 from "../assets/small_images/Dubai Frame 3.webp";
-import dubai_frame_4 from "../assets/small_images/Dubai Frame 4.webp";
-import hot_air_ballon_1 from "../assets/small_images/Hot Air Balloon 1.webp";
-import hot_air_ballon_2 from "../assets/small_images/Hot Air Balloon 2.webp";
-import miracle_garden_1 from "../assets/small_images/Miracle Garden Dubai 1.webp";
-import miracle_garden_2 from "../assets/small_images/Miracle Garden Dubai 2.webp";
-import miracle_garden_3 from "../assets/small_images/Miracle Garden Dubai 3.webp";
-import miracle_garden_4 from "../assets/small_images/Miracle Garden Dubai 4.webp";
-import future_museum_1 from "../assets/small_images/Museum Of The Future 1.webp";
-import future_museum_2 from "../assets/small_images/Museum Of The Future 2.webp";
-import future_museum_3 from "../assets/small_images/Museum Of The Future 3.webp";
-import skydiving_1 from "../assets/small_images/Skydiving 1.webp";
-import skydiving_2 from "../assets/small_images/Skydiving 2.webp";
+import burj_al_arab_1 from "../assets/card_images/Burj Al Arab Tour 1.webp";
+import burj_al_arab_2 from "../assets/card_images/Burj Al Arab Tour 2.webp";
+import burj_al_arab_3 from "../assets/card_images/Burj Al Arab Tour 3.webp";
+import burj_khalifa_1 from "../assets/card_images/Burj Khalifa 1.webp";
+import burj_khalifa_2 from "../assets/card_images/Burj Khalifa 2.webp";
+import burj_khalifa_3 from "../assets/card_images/Burj Khalifa 4.webp";
+import desert_safari_1 from "../assets/card_images/Desert Safari 1.webp";
+import desert_safari_2 from "../assets/card_images/Desert Safari 2.webp";
+import dubai_aquarium_1 from "../assets/card_images/Dubai Aquarium And Underwater Zoo 1.webp";
+import dubai_aquarium_2 from "../assets/card_images/Dubai Aquarium And Underwater Zoo 2.webp";
+import dubai_aquarium_3 from "../assets/card_images/Dubai Aquarium And Underwater Zoo 3.webp";
+import dubai_dophinarium_1 from "../assets/card_images/Dubai Dolphinarium 1.webp";
+import dubai_dophinarium_2 from "../assets/card_images/Dubai Dolphinarium 2.webp";
+import dubai_dophinarium_3 from "../assets/card_images/Dubai Dolphinarium 3.webp";
+import dubai_frame_1 from "../assets/card_images/Dubai Frame 1.webp";
+import dubai_frame_2 from "../assets/card_images/Dubai Frame 2.webp";
+import dubai_frame_3 from "../assets/card_images/Dubai Frame 3.webp";
+import dubai_frame_4 from "../assets/card_images/Dubai Frame 4.webp";
+import hot_air_ballon_1 from "../assets/card_images/Hot Air Balloon 1.webp";
+import hot_air_ballon_2 from "../assets/card_images/Hot Air Balloon 2.webp";
+import miracle_garden_1 from "../assets/card_images/Miracle Garden Dubai 1.webp";
+import miracle_garden_2 from "../assets/card_images/Miracle Garden Dubai 2.webp";
+import miracle_garden_3 from "../assets/card_images/Miracle Garden Dubai 3.webp";
+import miracle_garden_4 from "../assets/card_images/Miracle Garden Dubai 4.webp";
+import future_museum_1 from "../assets/card_images/Museum Of The Future 1.webp";
+import future_museum_2 from "../assets/card_images/Museum Of The Future 2.webp";
+import future_museum_3 from "../assets/card_images/Museum Of The Future 3.webp";
+import skydiving_1 from "../assets/card_images/Skydiving 1.webp";
+import skydiving_2 from "../assets/card_images/Skydiving 2.webp";
+import jetsky_1 from "../assets/card_images/Jet-ski 1.webp";
+import jetsky_2 from "../assets/card_images/jet-ski-2.webp";
 
 const activityCategories = {
   Dubai: [
@@ -93,6 +95,11 @@ const activityCategories = {
           key: "10",
           title: "Skydiving",
           images: [skydiving_1, skydiving_2],
+        },
+        {
+          key: "11",
+          title: "Jet Ski",
+          images: [jetsky_1, jetsky_2],
         },
       ],
     },

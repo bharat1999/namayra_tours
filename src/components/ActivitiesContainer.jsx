@@ -17,7 +17,7 @@ export default function ActivitiesContainer({ selectedCity }) {
           <p className="display-6 fs-6 text-muted fw-light fst-italic">
             {category.subheading}
           </p>
-          <Row className="mb-5">
+          <Row className="mb-5 justify-content-center">
             {category.activities.map((activity, idx) => (
               <ActivityCard key={idx} activity={activity} />
             ))}

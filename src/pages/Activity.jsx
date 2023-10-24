@@ -1,19 +1,44 @@
-import { Breadcrumb, Button, Carousel, Col, Modal, Row } from "react-bootstrap";
+import {
+  Alert,
+  Breadcrumb,
+  Button,
+  Carousel,
+  Col,
+  Container,
+  Modal,
+  Row,
+} from "react-bootstrap";
 //import { useParams } from "react-router-dom";
 import CustomNavbar from "../components/CustomNavbar";
 import WhatsappBtn from "../components/WhatsappBtn";
 import activityData from "../data/activity";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import EnquiryForm from "../components/EnquiryForm";
+import { useParams } from "react-router-dom";
 
 export default function Activity() {
-  //const { activityID } = useParams();
-  const activity = activityData[1];
+  const { activityID } = useParams();
+  const activity = activityData[activityID];
 
-  const [show, setShow] = useState(false);
+  const [showModal, setModalShow] = useState(false);
+  const [showAlert, setAlertShow] = useState(false);
+  const [alertVariant, setAlertVariant] = useState("danger");
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const toggleModalShow = () => {
+    if (showModal) {
+      setModalShow(false);
+    } else {
+      setModalShow(true);
+    }
+  };
+
+  const toggleAlertShow = () => {
+    console.log("Alert Status" + showAlert);
+    setAlertShow(true);
+    setInterval(() => setAlertShow(false), 10000);
+  };
+
   return (
     <>
       <CustomNavbar />
@@ -32,19 +57,31 @@ export default function Activity() {
             </Breadcrumb>
           </Col>
         </Row>
+        <Container className="alert-container text-center">
+          {showAlert ? (
+            alertVariant === "success" ? (
+              <Alert key={alertVariant} variant={alertVariant} dismissible>
+                Enquiry sent successfully. We will react out to you soon.
+              </Alert>
+            ) : (
+              <Alert key={alertVariant} variant={alertVariant} dismissible>
+                Failed to sent enquiry. Please try again later.
+              </Alert>
+            )
+          ) : (
+            ""
+          )}
+        </Container>
+
         <Carousel indicators={false} slide="true" interval="3000">
-          <Carousel.Item>
-            <img src="https://picsum.photos/1920/400" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src="https://picsum.photos/1920/400" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src="https://picsum.photos/1920/400" />
-          </Carousel.Item>
+          {activity.images.map((image, idx) => (
+            <Carousel.Item key={idx}>
+              <img className="home-carousel-image" src={image} width="100%" />
+            </Carousel.Item>
+          ))}
         </Carousel>
         <div className="enquiry-btn">
-          <Button onClick={handleShow}>Enquiry</Button>
+          <Button onClick={toggleModalShow}>Enquiry</Button>
         </div>
         <div className="text-container">
           <span className="display-6 fw-bold mb-0 heading">
@@ -74,19 +111,17 @@ export default function Activity() {
       <WhatsappBtn />
       <Footer />
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={showModal} onHide={toggleModalShow}>
         <Modal.Header closeButton>
           <Modal.Title>Enquiry</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Send
-          </Button>
-        </Modal.Footer>
+        <Modal.Body>
+          <EnquiryForm
+            toggleModalShow={toggleModalShow}
+            toggleAlertShow={toggleAlertShow}
+            setAlertVariant={(variant) => setAlertVariant(variant)}
+          />
+        </Modal.Body>
       </Modal>
     </>
   );
