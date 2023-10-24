@@ -80,13 +80,13 @@ export default function Activity() {
             </Carousel.Item>
           ))}
         </Carousel>
-        <div className="enquiry-btn">
-          <Button onClick={toggleModalShow}>Enquiry</Button>
-        </div>
-        <div className="text-container">
+        <div className="text-container d-flex justify-content-between align-items-center">
           <span className="display-6 fw-bold mb-0 heading">
             {activity?.title}
           </span>
+          <div className="enquiry-btn">
+            <Button onClick={toggleModalShow}>Enquiry</Button>
+          </div>
         </div>
         <div className="text-container mt-3">
           <span className="fw-bold fs-3  ps-2 subheading">

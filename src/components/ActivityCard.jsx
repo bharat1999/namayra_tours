@@ -23,12 +23,13 @@ export default function ActivityCard({ activity }) {
   return (
     <Col
       key={activity.key}
-      className="d-flex mt-4 justify-content-center"
+      className="d-flex mt-5 justify-content-center"
       xs="auto"
       lg={3}
     >
       <Card
         style={{ width: "300px" }}
+        className="align-items-center"
         onMouseOver={activateCarousel}
         onMouseOut={deactivateCarousel}
       >
@@ -39,20 +40,15 @@ export default function ActivityCard({ activity }) {
           slide={isCarouselActive}
           pause={false}
           touch={true}
+          style={{ width: "90%", top: "-1rem" }}
         >
           {activity.images.map((image, idx) => (
             <Carousel.Item key={idx}>
-              <Card.Img
-                className="bottom-border-radius-0"
-                height="150px"
-                width="100%"
-                variant=""
-                src={image}
-              />
+              <Card.Img height="200px" width="80%" variant="" src={image} />
             </Carousel.Item>
           ))}
         </Carousel>
-        <Card.Body className="pb-0">
+        <Card.Body className="py-0 w-100">
           <Card.Title className="fs-6">{activity.title}</Card.Title>
           <Card.Text className="mb-0">
             <div className="d-flex justify-content-between align-items-center mb-2">
