@@ -33,10 +33,10 @@ export default function EnquiryForm({
   const sendEmail = (formData) => {
     emailjs
       .send(
-        `${import.meta.env.VITE_EMAILJS_SERVICE_KEY}`,
-        `${import.meta.env.VITE_EMAILJS_TEMPLATE_ID}`,
+        "service_eof5w69",
+        "template_5yd3xk2",
         formData,
-        `${import.meta.env.VITE_EMAILJS_PUBLIC_KEY}`
+        "fdRKs2sZdgSmxzc8A"
       )
       .then(
         (result) => {
