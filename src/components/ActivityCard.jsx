@@ -58,19 +58,28 @@ export default function ActivityCard({ activity }) {
           <Card.Title className="fs-6">{activity.title}</Card.Title>
           <Card.Text className="mb-0">
             <div className="d-flex justify-content-between align-items-center mb-2">
-              <span style={{ "font-size": ".7rem" }}>
-                <i className="bi bi-star-fill"></i>
-                <i className="bi bi-star-fill"></i>
-                <i className="bi bi-star-fill"></i>
-                <i className="bi bi-star-fill"></i>
-                <i className="bi bi-star-fill"></i>
-              </span>
+              <div className="d-flex flex-column align-items-center">
+                <span
+                  className="text-muted fst-italic"
+                  style={{ "font-size": ".7rem" }}
+                >
+                  Rating
+                </span>
+                <span style={{ "font-size": ".7rem" }}>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                </span>
+              </div>
+
               <div className="text-center">
                 <Button
                   className="activityBtn"
                   href={`activity/${activity.key}`}
                 >
-                  View Detail
+                  Book Now
                 </Button>
               </div>
             </div>
