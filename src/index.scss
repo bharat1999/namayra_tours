@@ -11,18 +11,50 @@ body {
 }
 
 .navbar {
-  background-color: #fbeff1 !important;
+  background-color: #c70039 !important;
+}
+
+.dropdown-toggle {
+  color: white !important;
 }
 
 .brand-name-container {
+  background-color: #141e46;
+  padding: 5px 1rem;
+}
+
+.brand-name-subcontainer {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  padding: 0;
+  line-height: 30px;
+
+  img {
+    height: 4rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+    color: #25d366 !important;
+
+    span {
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.brand-contact-container {
+  justify-content: end !important;
+  column-gap: 2rem;
 }
 
 .brand-name {
   font-family: "Exodar";
-  color: #7b69ac;
+  color: #fff5e0;
   font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 5px 1px 20px #8a6a9e;
 }
 
 .home-carousel-image {
@@ -30,25 +62,44 @@ body {
 }
 
 .card {
-  box-shadow: #fbeff1 1.95px 1.95px 2.6px;
-  border: none;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border-radius: 20px !important;
 }
 
 .card:hover {
-  box-shadow: grey 2.5px 2.5px 3.6px !important;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
 
-  .carousel {
-    box-shadow: 5px 5px 5px grey;
+.activity-category {
+  .heading {
+    font-size: 2rem !important;
+    border-bottom: 5px dashed #ff6969;
+    margin-bottom: 16px !important;
+  }
+
+  .subheading {
+    span {
+      color: #ff6969;
+      font-weight: 700;
+    }
   }
 }
 
+.activity-card-image {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
 .activityBtn {
-  background-color: #615387 !important;
-  border: 2px solid #fbeff1 !important;
+  background-color: #ff6969 !important;
+  border: 1px solid #141e46 !important;
+  color: #fff5e0 !important;
 }
 
 .activityBtn:hover {
-  background-color: #7b69ac !important;
+  background-color: #c70039 !important;
 }
 
 .breadcrumb-item {
@@ -126,22 +177,28 @@ body {
 }
 
 .footer {
-  background-color: #fbeff1;
-  color: #7b69ac;
+  background-color: #c70039;
+  color: white !important;
 
   img {
     width: 10%;
   }
 }
 
+.footer-title-container {
+  background-color: #141e46;
+  text-align: center;
+  color: white;
+}
+
 .social-container {
   i {
-    color: #7b69ac;
+    color: #fff5e0;
     font-size: 25px;
   }
 
   i:hover {
-    color: #615387;
+    color: #141e46;
   }
 }
 
@@ -152,15 +209,16 @@ body {
 }
 
 .input-group-text {
-  background-color: white !important;
-  border: 2px solid #8a6a9e !important;
+  background-color: #fff5e0 !important;
+  border: 2px solid #c70039 !important;
   border-right: none !important;
 }
 
 .form-select {
-  border: 2px solid #8a6a9e !important;
+  border: 2px solid #c70039 !important;
   border-left: none !important;
-  color: #7b69ac !important;
+  color: #ff6969 !important;
+  background-color: #fff5e0 !important;
 }
 
 .form-select:focus {
@@ -170,7 +228,7 @@ body {
 
 .bi-geo-alt-fill,
 .bi-star-fill {
-  color: #7b69ac;
+  color: #ff6969;
 }
 
 .alert-container {
@@ -178,9 +236,37 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .brand-name-subcontainer {
+    padding: 1px 0;
+    line-height: 15px;
+    img {
+      height: 4rem;
+    }
+
+    a {
+      font-size: 13px;
+      color: #25d366 !important;
+
+      span {
+        margin-left: 0.5rem;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .brand-contact-container {
+    align-items: end;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
   .home-carousel-image {
     height: 250px !important;
-    object-fit: contain;
+    //object-fit: cover;
   }
 
   .enquiry-btn {

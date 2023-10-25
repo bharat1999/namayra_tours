@@ -4,6 +4,7 @@ import ActivitiesContainer from "../components/ActivitiesContainer";
 import WhatsappBtn from "../components/WhatsappBtn";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import Header from "../components/Header";
 
 export default function Home() {
   const [selectedCity, setCity] = useState("Dubai");
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <>
+      <Header />
       <CustomNavbar />
       <CustomCarousel selectedCity={selectedCity} handleChange={handleChange} />
       <ActivitiesContainer selectedCity={selectedCity} />

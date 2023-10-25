@@ -40,15 +40,21 @@ export default function ActivityCard({ activity }) {
           slide={isCarouselActive}
           pause={false}
           touch={true}
-          style={{ width: "90%", top: "-1rem" }}
+          className="w-100"
         >
           {activity.images.map((image, idx) => (
             <Carousel.Item key={idx}>
-              <Card.Img height="200px" width="80%" variant="" src={image} />
+              <Card.Img
+                className="activity-card-image"
+                height="255px"
+                width="80%"
+                variant=""
+                src={image}
+              />
             </Carousel.Item>
           ))}
         </Carousel>
-        <Card.Body className="py-0 w-100">
+        <Card.Body className="pt-4 w-100">
           <Card.Title className="fs-6">{activity.title}</Card.Title>
           <Card.Text className="mb-0">
             <div className="d-flex justify-content-between align-items-center mb-2">

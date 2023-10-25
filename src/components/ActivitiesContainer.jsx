@@ -13,10 +13,14 @@ export default function ActivitiesContainer({ selectedCity }) {
     <Container>
       {activitiesCategories[selectedCity].map((category, idx) => (
         <Container className="mt-4 px-5" key={idx}>
-          <p className="display-6 fs-5 fw-bold mb-0">{category.heading}</p>
-          <p className="display-6 fs-6 text-muted fw-light fst-italic">
-            {category.subheading}
-          </p>
+          <div className="text-center activity-category">
+            <span className="pb-1 heading">{category.heading}</span>
+            <p className="mt-3 text-muted fst-italic subheading">
+              <span>&quot;</span>
+              {category.subheading}
+              <span>&quot;</span>
+            </p>
+          </div>
           <Row className="mb-5 justify-content-center">
             {category.activities.map((activity, idx) => (
               <ActivityCard key={idx} activity={activity} />
