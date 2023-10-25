@@ -4,7 +4,7 @@ export default function Features() {
   return (
     <Container className="text-center mb-4 feature">
       <span className="title display-6 fw-bold">Why Choose Us</span>
-      <Row>
+      <Row className="mt-3">
         <Col lg={4} xs={12} className="feature-card">
           <i className="bi bi-tag"></i>
           <p className="heading">Best Prices</p>
