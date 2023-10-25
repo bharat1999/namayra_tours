@@ -4,13 +4,17 @@ import logo from "../assets/logo/logo.webp";
 
 export default function Header() {
   return (
-    <Row fluid className="brand-name-container">
+    <Row className="brand-name-container">
       <Col className="brand-name-subcontainer">
-        <Image src={logo} />
-        <div>
-          <p className="brand-name mb-0">Namayra</p>
-          <p className="brand-name mb-0">Tourism</p>
-        </div>
+        <a href="/">
+          <Image src={logo} />
+        </a>
+        <a href="/" className="text-decoration-none">
+          <div>
+            <p className="brand-name mb-0">Namayra</p>
+            <p className="brand-name mb-0">Tourism</p>
+          </div>
+        </a>
       </Col>
       <Col className="brand-name-subcontainer brand-contact-container">
         <a

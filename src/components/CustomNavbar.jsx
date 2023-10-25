@@ -8,16 +8,16 @@ export default function CustomNavbar() {
     <Navbar expand="lg" data-bs-theme="light">
       <Container className="justify-content-center">
         <Nav>
-          <Nav.Item>
+          <Nav.Item className="text-center">
             <Nav.Link href="/about" className="text-white">
               About Us
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className="text-center">
             <NavDropdown
               title="Helpline"
               id="collasible-nav-dropdown"
-              align="end"
+              align="center"
             >
               <NavDropdown.Item href="#">
                 UAE: +971 58 922 8370

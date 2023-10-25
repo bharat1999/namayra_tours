@@ -16,6 +16,7 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import EnquiryForm from "../components/EnquiryForm";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function Activity() {
   const { activityID } = useParams();
@@ -41,6 +42,7 @@ export default function Activity() {
 
   return (
     <>
+      <Header />
       <CustomNavbar />
       <div className="activity-container">
         <Row>
@@ -85,7 +87,7 @@ export default function Activity() {
             {activity?.title}
           </span>
           <div className="enquiry-btn">
-            <Button onClick={toggleModalShow}>Enquiry</Button>
+            <Button onClick={toggleModalShow}>Enquire Now</Button>
           </div>
         </div>
         <div className="text-container mt-3">
@@ -94,8 +96,8 @@ export default function Activity() {
           </span>
           {activity?.about.map((e, idx) => (
             <div key={idx}>
-              <p className="fw-bold">{e?.title}</p>
-              <p>{e?.content}</p>
+              <p className="title">{e?.title}</p>
+              <p className="fw-light">{e?.content}</p>
             </div>
           ))}
         </div>

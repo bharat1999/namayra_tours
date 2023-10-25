@@ -115,11 +115,8 @@ export default function EnquiryForm({
           )}
         </Form.Group>
         <div className="d-flex justify-content-end my-3 gap-3">
-          <Button variant="secondary" onClick={toggleModalShow}>
-            Close
-          </Button>
-          <Button variant="primary" type="submit">
-            Submit
+          <Button variant="warning" type="submit">
+            Send
           </Button>
         </div>
       </Form>
