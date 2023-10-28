@@ -10,20 +10,14 @@ body {
   background-color: #fff5e0 !important;
 }
 
-.navbar {
-  background-color: #c70039 !important;
-}
+//Header Style Start
 
-.dropdown-toggle {
-  color: white !important;
-}
-
-.brand-name-container {
+.header-container {
   background-color: #141e46;
   padding: 5px 1rem;
 }
 
-.brand-name-subcontainer {
+.header-subcontainer {
   display: flex;
   align-items: center;
   padding: 0;
@@ -44,10 +38,45 @@ body {
   }
 }
 
-.brand-contact-container {
+.header-contact-container {
   justify-content: end !important;
   column-gap: 2rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .header-subcontainer {
+    padding: 1px 0;
+    line-height: 15px;
+    img {
+      height: 4rem;
+    }
+
+    a {
+      font-size: 13px;
+      color: #25d366 !important;
+    }
+  }
+
+  .header-contact-container {
+    align-items: end;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+}
+
+//Header Style End
+
+// Navbar Style Start
+
+.navbar {
+  background-color: #c70039 !important;
+}
+
+.dropdown-toggle {
+  color: white !important;
+}
+
+// Navbar Style End
 
 .brand-name {
   font-family: "Exodar";
@@ -57,13 +86,51 @@ body {
   //text-shadow: 5px 1px 20px #8a6a9e;
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
 }
+
+// Home Carousel Style Start
 
 .home-carousel-image {
   height: 500px !important;
 }
+
+.location-select {
+  position: relative;
+  top: -5rem;
+  width: 20% !important;
+}
+
+.input-group-text {
+  background-color: #fff5e0 !important;
+  border: 2px solid #c70039 !important;
+  border-right: none !important;
+}
+
+.form-select {
+  border: 2px solid #c70039 !important;
+  border-left: none !important;
+  color: #ff6969 !important;
+  background-color: #fff5e0 !important;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+  border: #8a6a9e;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-carousel-image {
+    height: 250px !important;
+  }
+
+  .location-select {
+    width: 50% !important;
+  }
+}
+
+// Home Carousel Style End
+
+// Activity Card Style Start
 
 .card {
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
@@ -72,21 +139,6 @@ body {
 
 .card:hover {
   box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
-}
-
-.activity-category {
-  .heading {
-    font-size: 2rem !important;
-    border-bottom: 5px dashed #ff6969;
-    margin-bottom: 16px !important;
-  }
-
-  .subheading {
-    span {
-      color: #ff6969;
-      font-weight: 700;
-    }
-  }
 }
 
 .activity-card-image {
@@ -106,22 +158,42 @@ body {
   background-color: #c70039 !important;
 }
 
-.breadcrumb-item {
-  color: #ff6969 !important;
+// Activity Card Style End
 
-  a {
-    color: #212529bf;
-    text-decoration: none;
+.activity-category {
+  .heading {
+    font-size: 2rem !important;
+    border-bottom: 5px dashed #ff6969;
+    margin-bottom: 16px !important;
+  }
+
+  .subheading {
+    span {
+      color: #ff6969;
+      font-weight: 700;
+    }
   }
 }
 
-.breadcrumb-item.active {
-  font-weight: 500;
-}
+// Activity Page Style Start
 
 .activity-container {
   padding: 2rem 7rem;
   color: #fff5e0;
+
+  .breadcrumb-item {
+    color: #ff6969 !important;
+
+    a {
+      color: #212529bf;
+      text-decoration: none;
+    }
+  }
+
+  .breadcrumb-item.active {
+    font-weight: 500;
+  }
+
   .carousel {
     border-radius: 7px;
     border-bottom-left-radius: 0;
@@ -181,6 +253,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .activity-container {
+    padding: 1rem 0.7rem;
+
+    .text-container {
+      padding: 2rem;
+    }
+  }
+}
+
+// Activity Page Style End
+
 .whatsappBtn {
   z-index: 2;
   position: fixed;
@@ -189,6 +273,8 @@ body {
   background: #25d366 !important;
   border: none !important;
 }
+
+// Home Page Why Choose US Style Start
 
 .feature {
   color: #141e46 !important;
@@ -224,6 +310,10 @@ body {
   }
 }
 
+// Home Page Why Choose US Style End
+
+// Footer Style Start
+
 .footer {
   background-color: #c70039;
   color: white !important;
@@ -250,29 +340,15 @@ body {
   }
 }
 
-.location-select {
-  position: relative;
-  top: -5rem;
-  width: 20% !important;
+@media only screen and (max-width: 500px) {
+  .footer {
+    img {
+      width: 60%;
+    }
+  }
 }
 
-.input-group-text {
-  background-color: #fff5e0 !important;
-  border: 2px solid #c70039 !important;
-  border-right: none !important;
-}
-
-.form-select {
-  border: 2px solid #c70039 !important;
-  border-left: none !important;
-  color: #ff6969 !important;
-  background-color: #fff5e0 !important;
-}
-
-.form-select:focus {
-  box-shadow: none !important;
-  border: #8a6a9e;
-}
+// Footer Style End
 
 .bi-geo-alt-fill,
 .bi-star-fill {
@@ -284,37 +360,8 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .brand-name-subcontainer {
-    padding: 1px 0;
-    line-height: 15px;
-    img {
-      height: 4rem;
-    }
-
-    a {
-      font-size: 13px;
-      color: #25d366 !important;
-
-      span {
-        margin-left: 0.5rem;
-        font-size: 13px;
-      }
-    }
-  }
-
-  .brand-contact-container {
-    align-items: end;
-    justify-content: center !important;
-    flex-direction: column;
-  }
-
   .brand-name {
     font-size: 1rem;
-  }
-
-  .home-carousel-image {
-    height: 250px !important;
-    //object-fit: cover;
   }
 
   .enquiry-btn {
@@ -323,75 +370,7 @@ body {
     }
   }
 
-  .location-select {
-    width: 50% !important;
-  }
-
   .alert-container {
     width: 90% !important;
-  }
-
-  .activity-container {
-    padding: 1rem 0.7rem;
-
-    .text-container {
-      padding: 2rem;
-    }
-  }
-
-  .footer {
-    img {
-      width: 60%;
-    }
-  }
-}
-
-@-webkit-keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-
-@keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
   }
 }

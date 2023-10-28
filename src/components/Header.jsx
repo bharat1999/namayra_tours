@@ -4,8 +4,8 @@ import logo from "../assets/logo/logo.webp";
 
 export default function Header() {
   return (
-    <Row className="brand-name-container">
-      <Col className="brand-name-subcontainer">
+    <Row className="header-container">
+      <Col className="header-subcontainer">
         <a href="/">
           <Image src={logo} />
         </a>
@@ -16,7 +16,7 @@ export default function Header() {
           </div>
         </a>
       </Col>
-      <Col className="brand-name-subcontainer brand-contact-container">
+      <Col className="header-subcontainer header-contact-container">
         <a
           href="https://api.whatsapp.com/send?phone=+971589228370&amp;text=Hello"
           target="_blank"
