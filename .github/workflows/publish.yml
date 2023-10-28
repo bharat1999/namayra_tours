@@ -3,7 +3,7 @@ name: Generate a build and deploy to hostinger
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
