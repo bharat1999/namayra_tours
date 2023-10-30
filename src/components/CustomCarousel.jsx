@@ -7,9 +7,10 @@ CustomCarousel.propTypes = {
   handleChange: PropTypes.func,
 };
 
-import img1 from "../assets/home/Desert Safari.webp";
-import img2 from "../assets/home/Miracle Garden Dubai.webp";
-import img3 from "../assets/home/Museum Of The Future.webp";
+import img1 from "../assets/home/1.webp";
+import img2 from "../assets/home/2.webp";
+import img3 from "../assets/home/3.webp";
+import img4 from "../assets/home/4.webp";
 
 export default function CustomCarousel({ selectedCity, handleChange }) {
   return (
@@ -28,6 +29,9 @@ export default function CustomCarousel({ selectedCity, handleChange }) {
         </Carousel.Item>
         <Carousel.Item>
           <img className="home-carousel-image" src={img3} width="100%" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="home-carousel-image" src={img4} width="100%" />
         </Carousel.Item>
       </Carousel>
       <Container className="location-select">

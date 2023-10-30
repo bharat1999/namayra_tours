@@ -19,7 +19,7 @@ export default function CustomNavbar() {
               id="collasible-nav-dropdown"
               align="center"
             >
-              <NavDropdown.Item href="#">
+              <NavDropdown.Item href="tel:+971589228370">
                 UAE: +971 58 922 8370
               </NavDropdown.Item>
             </NavDropdown>
