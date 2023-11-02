@@ -91,7 +91,8 @@ body {
 // Home Carousel Style Start
 
 .home-carousel-image {
-  height: 500px !important;
+  height: 375px !important;
+  background-size: cover;
 }
 
 .location-select {
@@ -130,14 +131,34 @@ body {
 
 // Home Carousel Style End
 
+// Categories Style Start
+
+.categories-container {
+  position: relative;
+  top: -4rem;
+
+  .card {
+    border: none;
+    background: #fff5e08a;
+    padding: 1rem 0 0;
+  }
+
+  .card-img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+// Categories Style ends
+
 // Activity Card Style Start
 
-.card {
+.activity-card {
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   border-radius: 20px !important;
 }
 
-.card:hover {
+.activity-card:hover {
   box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
 }
 
@@ -240,6 +261,9 @@ body {
 
     ul {
       list-style: none;
+      span {
+        color: #141e46;
+      }
     }
 
     ul li::before {
@@ -259,6 +283,10 @@ body {
 
     .text-container {
       padding: 2rem;
+
+      ul {
+        margin-left: -15px;
+      }
     }
   }
 }

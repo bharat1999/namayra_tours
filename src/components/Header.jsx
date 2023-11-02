@@ -4,7 +4,7 @@ import logo from "../assets/logo/logo.webp";
 
 export default function Header() {
   return (
-    <Row className="header-container">
+    <Row className="header-container mx-0">
       <Col className="header-subcontainer">
         <a href="/">
           <Image src={logo} />

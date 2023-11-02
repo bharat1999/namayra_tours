@@ -1,18 +1,11 @@
-import { Carousel, Container, Form, InputGroup } from "react-bootstrap";
-
-import PropTypes from "prop-types";
-
-CustomCarousel.propTypes = {
-  selectedCity: PropTypes.string,
-  handleChange: PropTypes.func,
-};
+import { Carousel, Container } from "react-bootstrap";
 
 import img1 from "../assets/home/1.webp";
 import img2 from "../assets/home/2.webp";
 import img3 from "../assets/home/3.webp";
 import img4 from "../assets/home/4.webp";
 
-export default function CustomCarousel({ selectedCity, handleChange }) {
+export default function CustomCarousel() {
   return (
     <Container fluid className="px-0">
       <Carousel
@@ -34,7 +27,7 @@ export default function CustomCarousel({ selectedCity, handleChange }) {
           <img className="home-carousel-image" src={img4} width="100%" />
         </Carousel.Item>
       </Carousel>
-      <Container className="location-select">
+      {/* <Container className="location-select">
         <InputGroup>
           <InputGroup.Text>
             <i className=" bi bi-geo-alt-fill"></i>
@@ -44,7 +37,7 @@ export default function CustomCarousel({ selectedCity, handleChange }) {
             <option value="AbuDhabi">Abu Dhabi</option>
           </Form.Select>
         </InputGroup>
-      </Container>
+      </Container> */}
     </Container>
   );
 }

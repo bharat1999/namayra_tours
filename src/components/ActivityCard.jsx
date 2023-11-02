@@ -29,7 +29,7 @@ export default function ActivityCard({ activity }) {
     >
       <Card
         style={{ width: "300px" }}
-        className="align-items-center"
+        className="align-items-center activity-card"
         onMouseOver={activateCarousel}
         onMouseOut={deactivateCarousel}
       >

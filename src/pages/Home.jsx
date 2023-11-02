@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import Header from "../components/Header";
 import Features from "../components/Features";
+import CategoriesContainer from "../components/CategoriesContainer";
 
 export default function Home() {
   const [selectedCity, setCity] = useState("Dubai");
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <CustomNavbar />
       <CustomCarousel selectedCity={selectedCity} handleChange={handleChange} />
+      <CategoriesContainer />
       <ActivitiesContainer selectedCity={selectedCity} />
       <WhatsappBtn />
       <Features />
