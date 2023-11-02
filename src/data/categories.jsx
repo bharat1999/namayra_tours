@@ -1,10 +1,10 @@
-import desertSafari from "../assets/category_icons/desert-safari-with-quad.jpg";
-import dhowCruise from "../assets/category_icons/dhow-cruise-dubai-thumb-1.jpg";
-import dubaiSkyline from "../assets/category_icons/dubai-skyline.jpg";
-import themePark from "../assets/category_icons/Theme park.jpg";
-import transfers from "../assets/category_icons/Transfer.jpg";
-import waterpark from "../assets/category_icons/waterpark.jpg";
-import other from "../assets/category_icons/other_attractions.jpg";
+import desertSafari from "../assets/category_icons/desert-safari-with-quad.webp";
+import dhowCruise from "../assets/category_icons/dhow-cruise-dubai-thumb-1.webp";
+import dubaiSkyline from "../assets/category_icons/dubai-skyline.webp";
+import themePark from "../assets/category_icons/Theme park.webp";
+import transfers from "../assets/category_icons/Transfer.webp";
+import waterpark from "../assets/category_icons/waterpark.webp";
+import other from "../assets/category_icons/other_attractions.webp";
 
 const categoriesData = [
   {
