@@ -19,14 +19,13 @@ export default function ActivityCard({ activity }) {
       >
         <Card.Img
           className="activity-card-image"
-          height="150px"
           variant=""
           src={activity.image}
         />
-        <Card.Body className="pt-2 w-100">
+        <Card.Body className="pt-1 pb-2 w-100">
           <Card.Title className="fs-6">{activity.title}</Card.Title>
           <Card.Text className="mb-0">
-            <div className="d-flex justify-content-between align-items-center mb-2">
+            <div className="d-flex justify-content-between align-items-center">
               <div className="d-flex flex-column align-items-center">
                 <span
                   className="text-muted fst-italic"

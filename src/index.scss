@@ -13,10 +13,16 @@ body {
 // CSS used by multiple components
 
 .carousel-image {
-  height: 375px !important;
+  height: 350px !important;
   object-fit: contain;
   width: 100%;
   background-color: #141e46;
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-image {
+    height: 300px !important;
+  }
 }
 
 //Header Style Start
@@ -168,6 +174,7 @@ body {
 }
 
 .activity-card-image {
+  height: 150px;
   border-top-right-radius: 20px !important;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 0 !important;
