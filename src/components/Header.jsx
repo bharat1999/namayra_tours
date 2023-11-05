@@ -18,7 +18,7 @@ export default function Header() {
       </Col>
       <Col className="header-subcontainer header-contact-container">
         <a
-          href="https://api.whatsapp.com/send?phone=+971589228370&amp;text=Hello"
+          href="https://api.whatsapp.com/send?phone=+971558268344&amp;text=Hello"
           target="_blank"
           rel="noreferrer"
           className="d-flex align-items-center"

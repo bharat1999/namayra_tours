@@ -19,13 +19,12 @@ export default function CustomNavbar() {
               id="collasible-nav-dropdown"
               align="center"
             >
-              <NavDropdown.Item href="tel:+971589228370">
+              <NavDropdown.Item href="tel:+971558268344">
                 UAE: +971 58 922 8370
               </NavDropdown.Item>
             </NavDropdown>
           </Nav.Item>
         </Nav>
-        {/* </NavbarCollapse> */}
       </Container>
     </Navbar>
   );
