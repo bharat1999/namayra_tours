@@ -15,16 +15,16 @@ export default function CustomCarousel() {
         interval="3000"
       >
         <Carousel.Item>
-          <img className="home-carousel-image" src={img1} width="100%" />
+          <img className="carousel-image" src={img1} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="home-carousel-image" src={img2} width="100%" />
+          <img className="carousel-image" src={img2} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="home-carousel-image" src={img3} width="100%" />
+          <img className="carousel-image" src={img3} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="home-carousel-image" src={img4} width="100%" />
+          <img className="carousel-image" src={img4} />
         </Carousel.Item>
       </Carousel>
       {/* <Container className="location-select">

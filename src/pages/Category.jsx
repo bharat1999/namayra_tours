@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import CustomNavbar from "../components/CustomNavbar";
-import { Breadcrumb, Col, Row } from "react-bootstrap";
+import { Breadcrumb, Col, Row, Carousel } from "react-bootstrap";
 import categoryData from "../data/category";
 
 export default function Category() {
@@ -48,7 +48,18 @@ export default function Category() {
             </Breadcrumb>
           </Col>
         </Row>
-
+        <Carousel
+          indicators={false}
+          controls={false}
+          slide="true"
+          interval="3000"
+        >
+          {category.images.map((image, idx) => (
+            <Carousel.Item key={idx}>
+              <img className="carousel-image" src={image} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
         <div className="text-container d-flex justify-content-between align-items-center">
           <span className="display-6 fw-bold mb-0 heading">
             {category?.title}

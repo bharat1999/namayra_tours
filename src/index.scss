@@ -10,6 +10,15 @@ body {
   background-color: #fff5e0 !important;
 }
 
+// CSS used by multiple components
+
+.carousel-image {
+  height: 375px !important;
+  object-fit: contain;
+  width: 100%;
+  background-color: #141e46;
+}
+
 //Header Style Start
 
 .header-container {
@@ -89,11 +98,6 @@ body {
 }
 
 // Home Carousel Style Start
-
-.home-carousel-image {
-  height: 375px !important;
-  background-size: cover;
-}
 
 .location-select {
   position: relative;

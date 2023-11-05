@@ -1,6 +1,35 @@
+import ds1 from "../assets/category_images/ds1.webp";
+import ds2 from "../assets/category_images/ds2.webp";
+import ds3 from "../assets/category_images/ds3.webp";
+import dc1 from "../assets/category_images/dc1.webp";
+import dc2 from "../assets/category_images/dc2.webp";
+import dc3 from "../assets/category_images/dc3.webp";
+import ct1 from "../assets/category_images/ct1.webp";
+import ct2 from "../assets/category_images/ct2.webp";
+import ct3 from "../assets/category_images/ct3.webp";
+import ct4 from "../assets/category_images/ct4.webp";
+import tp1 from "../assets/category_images/tp1.webp";
+import tp2 from "../assets/category_images/tp2.webp";
+import tp3 from "../assets/category_images/tp3.webp";
+import t1 from "../assets/category_images/t1.webp";
+import t2 from "../assets/category_images/t2.webp";
+import wa1 from "../assets/category_images/wa1.webp";
+import wa2 from "../assets/category_images/wa2.webp";
+import wa3 from "../assets/category_images/wa3.webp";
+import wa4 from "../assets/category_images/wa4.webp";
+import wa5 from "../assets/category_images/wa5.webp";
+import oa1 from "../assets/category_images/oa1.webp";
+import oa2 from "../assets/category_images/oa2.webp";
+import oa3 from "../assets/category_images/oa3.webp";
+import oa4 from "../assets/category_images/oa4.webp";
+import oa5 from "../assets/category_images/oa5.webp";
+import oa6 from "../assets/category_images/oa6.webp";
+import oa7 from "../assets/category_images/oa7.webp";
+
 const categoryData = {
   1: {
     title: "Desert Safari",
+    images: [ds1, ds2, ds3],
     about: {
       content: [
         "A desert safari tour in Dubai or other desert destinations typically includes a range of activities and services designed to give you a memorable experience in the desert environment. The specific inclusions can vary depending on the tour operator and the type of desert safari you choose, but here are some common elements you can expect to find:",
@@ -101,6 +130,7 @@ const categoryData = {
   },
   2: {
     title: "Dhow Cruise",
+    images: [dc1, dc2, dc3],
     about: {
       content: [
         "Experience Dubai’s pulsating modern cityscape with unrivaled sights at twilight on a 90-minute sunset cruise in Dubai Marina. Choose from the fully enclosed, air-conditioned lower deck or partially open-air deck. As the dhow sets sail, you will cruise past some of the city’s legendary landmarks, including Burj Al Arab, Atlantis, The Palm, etc. You will also feast on a delicious three-course buffet dinner, relish unlimited refreshments, and take in the captivating Tanura show onboard.",
@@ -132,6 +162,7 @@ const categoryData = {
   },
   3: {
     title: "Top Dubai Tours & Activities",
+    images: [ct1, ct2, ct3, ct4],
     about: {
       bulletPoints: [
         {
@@ -169,6 +200,7 @@ const categoryData = {
   },
   4: {
     title: "Theme Park",
+    images: [tp1, tp2, tp3],
     about: {
       content: [
         "Dubai is home to some of the world's most thrilling and entertaining theme parks, making it a fantastic destination for families and adventure seekers. Here are some of the top theme parks in Dubai and what you can expect from your experience:",
@@ -203,6 +235,7 @@ const categoryData = {
   },
   5: {
     title: "Transfers",
+    images: [t1, t2],
     about: {
       content: [
         "Transfers in Dubai typically refer to transportation services that can take you to and from various locations within the city. Here are some common transfer experiences you might encounter in Dubai:",
@@ -266,6 +299,7 @@ const categoryData = {
   },
   6: {
     title: "Water Activities",
+    images: [wa1, wa2, wa3, wa4, wa5],
     about: {
       content: [
         "Dubai offers a wide range of water-based activities for visitors to enjoy, thanks to its stunning coastline along the Persian Gulf and numerous man-made water attractions. Here are some popular water activities and experiences you can enjoy in Dubai:",
@@ -342,6 +376,7 @@ const categoryData = {
   },
   7: {
     title: "Other Attractions in Dubai ",
+    images: [oa1, oa2, oa3, oa4, oa5, oa6, oa7],
     about: {
       content: [
         "To book other activities in Dubai, you can follow these steps:",
