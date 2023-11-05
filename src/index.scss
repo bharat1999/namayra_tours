@@ -167,6 +167,10 @@ body {
   // box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   box-shadow: 1px 8px 30px rgba(128, 128, 128, 0.667);
   border-radius: 20px !important;
+
+  .card-title {
+    font-size: 0.8rem !important;
+  }
 }
 
 .activity-card:hover {
@@ -174,7 +178,7 @@ body {
 }
 
 .activity-card-image {
-  height: 150px;
+  height: 140px;
   border-top-right-radius: 20px !important;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 0 !important;
@@ -185,7 +189,8 @@ body {
   background-color: #ff6969 !important;
   border: 2px solid #ffe600 !important;
   color: #fff5e0 !important;
-  font-size: 2rem;
+  font-size: 0.8rem !important;
+  padding: 0.5rem !important;
 }
 
 .activityBtn:hover {
