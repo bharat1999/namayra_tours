@@ -20,7 +20,7 @@ export default function CustomNavbar() {
               align="center"
             >
               <NavDropdown.Item href="tel:+971558268344">
-                UAE: +971 58 922 8370
+                UAE: +971 558268344
               </NavDropdown.Item>
             </NavDropdown>
           </Nav.Item>

@@ -78,7 +78,7 @@ export default function Activity() {
         <Carousel indicators={false} slide="true" interval="3000">
           {activity.images.map((image, idx) => (
             <Carousel.Item key={idx}>
-              <img className="home-carousel-image" src={image} width="100%" />
+              <img className="carousel-image" src={image} width="100%" />
             </Carousel.Item>
           ))}
         </Carousel>

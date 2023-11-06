@@ -3,24 +3,18 @@ import CustomCarousel from "../components/CustomCarousel";
 import ActivitiesContainer from "../components/ActivitiesContainer";
 import WhatsappBtn from "../components/WhatsappBtn";
 import Footer from "../components/Footer";
-import { useState } from "react";
 import Header from "../components/Header";
 import Features from "../components/Features";
 import CategoriesContainer from "../components/CategoriesContainer";
 
 export default function Home() {
-  const [selectedCity, setCity] = useState("Dubai");
-  const handleChange = (event) => {
-    setCity(event.target.value);
-  };
-
   return (
     <>
       <Header />
       <CustomNavbar />
-      <CustomCarousel selectedCity={selectedCity} handleChange={handleChange} />
+      <CustomCarousel />
       <CategoriesContainer />
-      <ActivitiesContainer selectedCity={selectedCity} />
+      <ActivitiesContainer />
       <WhatsappBtn />
       <Features />
       <Footer />

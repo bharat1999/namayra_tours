@@ -29,11 +29,11 @@ export default function ActivityCard({ activity }) {
               <div className="d-flex flex-column align-items-center">
                 <span
                   className="text-muted fst-italic"
-                  style={{ "font-size": ".7rem" }}
+                  style={{ fontSize: ".7rem" }}
                 >
                   Rating
                 </span>
-                <span style={{ "font-size": ".7rem" }}>
+                <span style={{ fontSize: ".7rem" }}>
                   <i className="bi bi-star-fill"></i>
                   <i className="bi bi-star-fill"></i>
                   <i className="bi bi-star-fill"></i>

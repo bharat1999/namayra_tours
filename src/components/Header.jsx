@@ -24,7 +24,7 @@ export default function Header() {
           className="d-flex align-items-center"
         >
           <i className="bi bi-whatsapp"></i>
-          <span className="ms-1 text-white">+971 589228370</span>
+          <span className="ms-1 text-white">+971 558268344</span>
         </a>
         <a href="mailto:info@namayratourism.com">
           <i className="bi bi-envelope"></i>

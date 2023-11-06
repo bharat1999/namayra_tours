@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif !important;
-  background-color: #fff5e0 !important;
+  background-color: rgb(255, 252, 252) !important;
 }
 
 // CSS used by multiple components
@@ -103,44 +103,6 @@ body {
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
 }
 
-// Home Carousel Style Start
-
-.location-select {
-  position: relative;
-  top: -5rem;
-  width: 20% !important;
-}
-
-.input-group-text {
-  background-color: #fff5e0 !important;
-  border: 2px solid #c70039 !important;
-  border-right: none !important;
-}
-
-.form-select {
-  border: 2px solid #c70039 !important;
-  border-left: none !important;
-  color: #ff6969 !important;
-  background-color: #fff5e0 !important;
-}
-
-.form-select:focus {
-  box-shadow: none !important;
-  border: #8a6a9e;
-}
-
-@media only screen and (max-width: 500px) {
-  .home-carousel-image {
-    height: 250px !important;
-  }
-
-  .location-select {
-    width: 50% !important;
-  }
-}
-
-// Home Carousel Style End
-
 // Categories Style Start
 
 .categories-container {
@@ -198,6 +160,12 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .activity-card {
+    .card-body {
+      text-align: center;
+      padding: 5px;
+    }
+  }
   .activityBtn {
     font-size: 0.8rem !important;
     padding: 0.3rem !important;
