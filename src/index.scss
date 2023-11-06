@@ -162,12 +162,17 @@ body {
 @media only screen and (max-width: 500px) {
   .activity-card {
     .card-body {
-      text-align: center;
-      padding: 5px;
+      //text-align: center;
+      padding: 5px 2px;
+
+      .card-title {
+        text-align: center;
+        font-size: 0.7rem !important;
+      }
     }
   }
   .activityBtn {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     padding: 0.3rem !important;
   }
 }
