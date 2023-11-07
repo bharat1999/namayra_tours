@@ -1,6 +1,6 @@
 import { Container, Image } from "react-bootstrap";
 
-import logo from "../assets/logo/logo.webp";
+import logo from "../assets/logo/logo_footer.webp";
 
 export default function Footer() {
   return (
@@ -8,7 +8,6 @@ export default function Footer() {
       <Container fluid className="p-5 footer">
         <Container className="d-flex flex-column align-items-center justify-content-center">
           <Image src={logo} />
-          <h3 className="brand-name">Namayra Tourism</h3>
         </Container>
         <Container className="mt-3 social-container d-flex justify-content-center gap-3">
           <div>
