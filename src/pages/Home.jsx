@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Features from "../components/Features";
 import CategoriesContainer from "../components/CategoriesContainer";
 import Testimonial from "../components/Testimonial";
+import VideoPlayer from "../components/VideoPlayer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <CustomNavbar />
       <CustomCarousel />
       <CategoriesContainer />
+      <VideoPlayer />
       <ActivitiesContainer />
       <WhatsappBtn />
       <Features />
