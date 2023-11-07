@@ -4,7 +4,7 @@ import categoriesData from "../data/categories";
 
 export default function CategoriesContainer() {
   return (
-    <Row className=" categories-container justify-content-center mx-5">
+    <Row className=" categories-container justify-content-center mx-5 gap-3">
       {categoriesData.map((category) => (
         <Col key={category.key}>
           <a href={`category/${category.key}`} className="text-decoration-none">

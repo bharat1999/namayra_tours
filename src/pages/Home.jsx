@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Features from "../components/Features";
 import CategoriesContainer from "../components/CategoriesContainer";
+import Testimonial from "../components/Testimonial";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ActivitiesContainer />
       <WhatsappBtn />
       <Features />
+      <Testimonial />
       <Footer />
     </>
   );

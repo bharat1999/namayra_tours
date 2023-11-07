@@ -9,12 +9,12 @@ export default function Header() {
         <a href="/">
           <Image src={logo} />
         </a>
-        <a href="/" className="text-decoration-none">
+        {/* <a href="/" className="text-decoration-none">
           <div>
             <p className="brand-name mb-0">Namayra</p>
             <p className="brand-name mb-0">Tourism</p>
           </div>
-        </a>
+        </a> */}
       </Col>
       <Col className="header-subcontainer header-contact-container">
         <a
