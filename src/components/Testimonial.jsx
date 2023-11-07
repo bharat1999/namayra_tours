@@ -3,13 +3,12 @@ import testimonials from "../data/testimonials";
 
 export default function Testimonial() {
   return (
-    <Container>
-      <Carousel
-        slide={true}
-        indicators={false}
-        interval={5000}
-        className="testimonial"
-      >
+    <Container className="testimonial">
+      <div className="text-center my-5">
+        <span className="title display-6 fw-bold">Testimonials</span>
+      </div>
+
+      <Carousel slide={true} indicators={false} interval={5000} className="">
         {testimonials.map((t, idx) => (
           <Carousel.Item key={idx} className="my-2">
             <div className="d-flex justify-content-center">

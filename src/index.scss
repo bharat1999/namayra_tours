@@ -350,13 +350,18 @@ body {
   .carousel-control-prev-icon {
     filter: invert(100%) !important;
   }
+
+  .title {
+    border-bottom: 5px solid #ff6969;
+    color: #141e46 !important;
+  }
 }
 .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 8rem;
+  height: 8rem;
   background-color: #141e46;
 
   p {
