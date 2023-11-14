@@ -8,12 +8,7 @@ import img4 from "../assets/home/4.webp";
 export default function CustomCarousel() {
   return (
     <Container fluid className="px-0">
-      <Carousel
-        indicators={false}
-        controls={false}
-        slide={true}
-        interval="3000"
-      >
+      <Carousel indicators={false} slide={true} interval="3000">
         <Carousel.Item>
           <img className="carousel-image" src={img1} />
         </Carousel.Item>

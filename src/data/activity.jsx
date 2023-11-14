@@ -699,15 +699,30 @@ const activityData = {
       {
         title: "Tour Inclusions",
         bulletPoints: [
-          { content: "A short briefing on the basics of scuba diving" },
-          { content: "An introduction to the equipment" },
-          { content: "Safety training session by a professional instructor" },
-          { content: "Explore Deep Dive Dubai up to 12m" },
-          { content: "Discover Scuba Dive" },
-          { content: "Premium Discover Scuba Dive" },
-          { content: "Edited video" },
-          { content: "Honorary wall certificate" },
-          { content: "100aed Dive Shop credit." },
+          {
+            title: "Specialized Training:",
+            content:
+              "If it's a deep dive certification, training materials and instruction will be included.",
+          },
+          {
+            title: "Advanced Equipment:",
+            content: "Access to specialized gear suitable for greater depths.",
+          },
+          {
+            title: "Experienced Guides:",
+            content:
+              "In-depth briefings and guidance from experienced instructors familiar with deep diving.",
+          },
+          {
+            title: "Extended Bottom Time:",
+            content:
+              "Adequate time for exploring greater depths, factoring in safety considerations.",
+          },
+          {
+            title: "Surface Intervals:",
+            content:
+              "Proper breaks between deep dives to prevent decompression sickness.",
+          },
         ],
       },
     ],
