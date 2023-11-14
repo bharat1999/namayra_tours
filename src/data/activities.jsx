@@ -113,17 +113,17 @@ const activityCategories = [
       "Culture, nature, thrills, and record-breaking experiences—Dubai is the place to seek out everything you imagine and beyond. Find it all here!",
     activities: [
       {
-        key: "1",
+        key: "11",
         title: "Evening Desert Safari",
         image: desert_safari_1,
       },
       {
-        key: "2",
+        key: "12",
         title: "Dune Buggy",
         image: desert_safari_2,
       },
       {
-        key: "3",
+        key: "13",
         title: "Overnight Desert Safari",
         image: desert_safari_3,
       },
@@ -134,12 +134,12 @@ const activityCategories = [
     subheading: "",
     activities: [
       {
-        key: "4",
+        key: "14",
         title: "Lotus Mega Yacht Dinner Cruise",
         image: dhow_cruise_1,
       },
       {
-        key: "5",
+        key: "15",
         title: "Luxury Yacht Rental",
         image: dhow_cruise_2,
       },
@@ -150,47 +150,47 @@ const activityCategories = [
     subheading: "",
     activities: [
       {
-        key: "4",
+        key: "16",
         title: "Dinner in the Sky",
         image: activity_1,
       },
       {
-        key: "5",
+        key: "17",
         title: "Deep Dive Dubai",
         image: activity_2,
       },
       {
-        key: "5",
+        key: "18",
         title: "Dubai Helicopter Tour",
         image: activity_3,
       },
       {
-        key: "5",
+        key: "19",
         title: "Ifly Dubai",
         image: activity_4,
       },
       {
-        key: "5",
+        key: "20",
         title: "New Year Party Dubai",
         image: activity_5,
       },
       {
-        key: "5",
+        key: "21",
         title: "Sunrise with Hot Air Balloon",
         image: activity_6,
       },
       {
-        key: "5",
+        key: "22",
         title: "The Dubai Balloon At Atlantis",
         image: activity_7,
       },
       {
-        key: "5",
+        key: "23",
         title: "The Storm Coaster Dubai",
         image: activity_8,
       },
       {
-        key: "5",
+        key: "24",
         title: "Xline Dubai Marina",
         image: activity_9,
       },
@@ -200,141 +200,96 @@ const activityCategories = [
     heading: "Top Attractions",
     activities: [
       {
-        key: "20",
+        key: "25",
         title: "3D World Selfie Museum",
         image: attraction_1,
       },
       {
-        key: "20",
+        key: "26",
         title: "Aya Universe Dubai",
         image: attraction_2,
       },
       {
-        key: "20",
+        key: "27",
         title: "Chillout Ice Lounge Dubai",
         image: attraction_3,
       },
       {
-        key: "20",
+        key: "28",
         title: "Dolphin Bay Atlantis",
         image: attraction_4,
       },
       {
-        key: "20",
+        key: "29",
         title: "Dubai Aquarium and Underwater Zoo",
         image: attraction_5,
       },
       {
-        key: "20",
+        key: "30",
         title: "Dubai Crocodile Park",
         image: attraction_6,
       },
       {
-        key: "20",
+        key: "31",
         title: "Dubai Dolphinarium",
         image: attraction_7,
       },
       {
-        key: "20",
+        key: "32",
         title: "Dubai Frame",
         image: attraction_8,
       },
       {
-        key: "20",
+        key: "33",
         title: "Global Village",
         image: attraction_9,
       },
       {
-        key: "20",
+        key: "34",
         title: "Miracle Garden ",
         image: attraction_10,
       },
       {
-        key: "20",
+        key: "35",
         title: "Museum of Illusion",
         image: attraction_11,
       },
       {
-        key: "20",
+        key: "36",
         title: "Museum of Future",
         image: attraction_12,
       },
       {
-        key: "20",
+        key: "37",
         title: "Qasr Al watan Abu Dhabi ",
         image: attraction_13,
       },
       {
-        key: "20",
+        key: "38",
         title: "Ski Dubai Tickets",
         image: attraction_14,
       },
       {
-        key: "20",
+        key: "39",
         title: "Sky View Dubai",
         image: attraction_15,
       },
       {
-        key: "20",
+        key: "40",
         title: "The Green Planet Dubai ",
         image: attraction_16,
       },
       {
-        key: "20",
+        key: "41",
         title: "The Lost Chamber Aquarium",
         image: attraction_17,
       },
       {
-        key: "20",
+        key: "42",
         title: "The View at Palm Jumeirah",
         image: attraction_18,
       },
     ],
   },
 ];
-// AbuDhabi: [
-//   {
-//     heading: "Top Experiences in Abu Dhabi",
-//     subheading:
-//       "Experience the thrill of discovering off-the-beaten-path gems and famous landmarks in top destinations worldwide - your wanderlust awaits!",
-//     activities: [
-//       {
-//         key: "11",
-//         title: "Half Day Dubai City Tour in Private Car",
-//         duration: "4 Hours",
-//         image: "https://picsum.photos/80",
-//         price: "249",
-//       },
-//       {
-//         key: "12",
-//         title: "Dubai Full Day City Tour in Private Car",
-//         duration: "9 Hours",
-//         image: "https://picsum.photos/80",
-//         price: "249",
-//       },
-//       {
-//         key: "13",
-//         title: "Half Day Dubai City Tour in Private Car",
-//         duration: "4 Hours",
-//         image: "https://picsum.photos/80",
-//         price: "249",
-//       },
-//       {
-//         key: "14",
-//         title: "Dubai Full Day City Tour in Private Car",
-//         duration: "9 Hours",
-//         image: "https://picsum.photos/80",
-//         price: "249",
-//       },
-//       {
-//         key: "15",
-//         title: "Dubai Full Day City Tour in Private Car",
-//         duration: "9 Hours",
-//         image: "https://picsum.photos/80",
-//         price: "249",
-//       },
-//     ],
-//   },
-// ],
-
 export default activityCategories;

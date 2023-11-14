@@ -40,6 +40,26 @@ export default function Activity() {
     setInterval(() => setAlertShow(false), 10000);
   };
 
+  function nestedBulletPoints(bulletPoints) {
+    return (
+      <ul className="mb-3">
+        {bulletPoints.map((e, idx) => (
+          <li key={idx}>
+            <span
+              className={
+                "fw-bold text-decoration-underline " + (e?.title ? "pe-2" : "")
+              }
+            >
+              {e?.title}
+            </span>
+            {e?.content}
+            {e?.bulletPoints ? nestedBulletPoints(e.bulletPoints) : ""}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   return (
     <>
       <Header />
@@ -76,7 +96,7 @@ export default function Activity() {
         </Container>
 
         <Carousel indicators={false} slide="true" interval="3000">
-          {activity.images.map((image, idx) => (
+          {activity?.images?.map((image, idx) => (
             <Carousel.Item key={idx}>
               <img className="carousel-image" src={image} width="100%" />
             </Carousel.Item>
@@ -97,18 +117,26 @@ export default function Activity() {
           {activity?.about.map((e, idx) => (
             <div key={idx}>
               <p className="title">{e?.title}</p>
-              <p className="fw-light">{e?.content}</p>
+              <p className="fw-light">
+                <span
+                  className={
+                    "fw-bold text-decoration-underline content-subheading " +
+                    (e?.subheading ? "pe-2" : " ")
+                  }
+                >
+                  {e?.subheading}
+                </span>
+                {e?.content}
+              </p>
             </div>
           ))}
         </div>
-        <div className="text-container mt-3">
-          <span className="fw-bold fs-3  ps-2 subheading">Highlights</span>
-          <ul className="mt-3">
-            {activity.highlights.map((e, idx) => (
-              <li key={idx}>{e}</li>
-            ))}
-          </ul>
-        </div>
+        {activity?.otherInfo?.map((info, idx) => (
+          <div key={idx} className="text-container mt-3">
+            <span className="fw-bold fs-3 ps-2 subheading">{info.title}</span>
+            {nestedBulletPoints(info?.bulletPoints)}
+          </div>
+        ))}
       </div>
       <WhatsappBtn />
       <Footer />

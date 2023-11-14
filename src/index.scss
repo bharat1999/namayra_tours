@@ -123,17 +123,6 @@ body {
 
 // Categories Style ends
 
-// Video Css start
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  video {
-    border: 10px solid #ff6969;
-  }
-}
-// Video Css End
-
 // Activity Card Style Start
 
 .activity-card {
@@ -218,6 +207,10 @@ body {
       color: #212529bf;
       text-decoration: none;
     }
+  }
+
+  .content-subheading {
+    color: #141e46;
   }
 
   .breadcrumb-item.active {
