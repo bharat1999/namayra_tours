@@ -85,6 +85,14 @@ body {
 
 .navbar {
   background-color: #c70039 !important;
+
+  .nav-link {
+    padding-bottom: 0;
+  }
+  .nav-link.active {
+    font-weight: 500;
+    border-bottom: 3px dashed white;
+  }
 }
 
 .dropdown-toggle {
