@@ -439,3 +439,59 @@ body {
     width: 90% !important;
   }
 }
+
+// About Page Css Starts
+
+.about-page {
+  .heading {
+    font-size: 2rem !important;
+    border-bottom: 5px dashed #ff6969;
+    margin-bottom: 16px !important;
+    text-align: center;
+    color: #141e46;
+    font-weight: 600;
+  }
+
+  .subheading {
+    font-size: 1.4rem !important;
+    color: #141e46;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .content {
+    text-align: justify;
+    width: 50%;
+    margin: 0.5rem auto;
+  }
+
+  .bullet-heading {
+    color: #141e46;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style: none;
+    span {
+      color: #141e46;
+    }
+  }
+
+  ul li::before {
+    content: "\2023";
+    color: #ff0000;
+    font-weight: 100;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .content {
+      width: 90%;
+    }
+  }
+}
+
+// About Page Css Ends
