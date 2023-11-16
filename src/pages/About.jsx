@@ -11,7 +11,7 @@ export default function About() {
       <CustomNavbar />
       <Container className="about-page text-center py-4">
         <div className="mt-3">
-          <span className="heading">Our Story</span>
+          <span className="heading">About Us</span>
           <p className="content pt-3">
             Traveling is living, and that&apos;s what we at Namayra Tourism
             believe. We&apos;ve been in the travel business for 20 years,
