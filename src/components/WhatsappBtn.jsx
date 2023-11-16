@@ -6,7 +6,7 @@ export default function WhatsappBtn() {
       <Button
         size="lg"
         className="whatsappBtn rounded-pill"
-        href="https://api.whatsapp.com/send?phone=+971558268344&amp;text=Hello"
+        href="https://api.whatsapp.com/send?phone=+971524618899&amp;text=Hello"
         target="_blank"
       >
         <div className="p-2 d-flex gap-2">

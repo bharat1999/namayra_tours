@@ -18,13 +18,13 @@ export default function Header() {
       </Col>
       <Col className="header-subcontainer header-contact-container">
         <a
-          href="https://api.whatsapp.com/send?phone=+971558268344&amp;text=Hello"
+          href="https://api.whatsapp.com/send?phone=+971524618899&amp;text=Hello"
           target="_blank"
           rel="noreferrer"
           className="d-flex align-items-center"
         >
           <i className="bi bi-whatsapp"></i>
-          <span className="ms-1 text-white">+971 558268344</span>
+          <span className="ms-1 text-white">+971 524618899</span>
         </a>
         <a href="mailto:info@namayratourism.com">
           <i className="bi bi-envelope"></i>
