@@ -13,7 +13,7 @@ export default function CustomNavbar() {
     setPath(currentPath);
   }, []);
   return (
-    <Navbar expand="lg" data-bs-theme="light">
+    <Navbar data-bs-theme="light">
       <Container className="justify-content-center">
         <Nav>
           <Nav.Item className="text-center">
