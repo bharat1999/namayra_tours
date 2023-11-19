@@ -164,7 +164,7 @@ body {
   border: 2px solid #ffe600 !important;
   color: #fff5e0 !important;
   font-size: 0.8rem !important;
-  padding: 0.5rem !important;
+  padding: 0.4rem !important;
 }
 
 .activityBtn:hover {
@@ -174,18 +174,21 @@ body {
 @media only screen and (max-width: 500px) {
   .activity-card {
     .card-body {
-      //text-align: center;
       padding: 5px 2px;
 
       .card-title {
         text-align: center;
         font-size: 0.7rem !important;
       }
+
+      .card-text {
+        margin: 0 0.3rem !important;
+      }
     }
   }
   .activityBtn {
     font-size: 0.7rem !important;
-    padding: 0.3rem !important;
+    padding: 0.2rem !important;
   }
 }
 

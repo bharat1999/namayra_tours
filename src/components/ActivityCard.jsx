@@ -22,7 +22,7 @@ export default function ActivityCard({ activity }) {
           variant=""
           src={activity.image}
         />
-        <Card.Body className="pt-1 pb-2 w-100" style={{ height: "75px" }}>
+        <Card.Body className="py-1 w-100">
           <Card.Title>{activity.title}</Card.Title>
           <Card.Text className="mb-0">
             <div className="d-flex justify-content-between align-items-center">
