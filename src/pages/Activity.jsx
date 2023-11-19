@@ -83,7 +83,7 @@ export default function Activity() {
           {showAlert ? (
             alertVariant === "success" ? (
               <Alert key={alertVariant} variant={alertVariant} dismissible>
-                Enquiry sent successfully. We will react out to you soon.
+                Enquiry sent successfully. We will reach out to you soon.
               </Alert>
             ) : (
               <Alert key={alertVariant} variant={alertVariant} dismissible>
@@ -102,7 +102,7 @@ export default function Activity() {
             </Carousel.Item>
           ))}
         </Carousel>
-        <div className="text-container d-flex justify-content-between align-items-center">
+        <div className="text-container title-container d-flex justify-content-between align-items-center">
           <span className="display-6 fw-bold mb-0 heading">
             {activity?.title}
           </span>

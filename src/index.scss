@@ -253,11 +253,15 @@ body {
     }
   }
 
+  .title-container {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+  }
+
   .text-container {
     background-color: #ff6969;
     padding: 2rem 3rem;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 7px;
 
     .heading {
       color: #141e46;
