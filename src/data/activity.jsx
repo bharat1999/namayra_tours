@@ -1,39 +1,70 @@
-import burj_al_arab_1 from "../assets/activity_images/Burj Al Arab Tour 1.webp";
-import burj_al_arab_2 from "../assets/activity_images/Burj Al Arab Tour 2.webp";
-import burj_al_arab_3 from "../assets/activity_images/Burj Al Arab Tour 3.webp";
-import burj_khalifa_1 from "../assets/activity_images/Burj Khalifa 1.webp";
-import burj_khalifa_2 from "../assets/activity_images/Burj Khalifa 2.webp";
-import burj_khalifa_3 from "../assets/activity_images/Burj Khalifa 4.webp";
-import desert_safari_1 from "../assets/activity_images/Desert Safari 1.webp";
-import desert_safari_2 from "../assets/activity_images/Desert Safari 2.webp";
-import dubai_aquarium_1 from "../assets/activity_images/Dubai Aquarium And Underwater Zoo 1.webp";
-import dubai_aquarium_2 from "../assets/activity_images/Dubai Aquarium And Underwater Zoo 2.webp";
-import dubai_aquarium_3 from "../assets/activity_images/Dubai Aquarium And Underwater Zoo 3.webp";
-import dubai_dophinarium_1 from "../assets/activity_images/Dubai Dolphinarium 1.webp";
-import dubai_dophinarium_2 from "../assets/activity_images/Dubai Dolphinarium 2.webp";
-import dubai_dophinarium_3 from "../assets/activity_images/Dubai Dolphinarium 3.webp";
-import dubai_frame_1 from "../assets/activity_images/Dubai Frame 1.webp";
-import dubai_frame_2 from "../assets/activity_images/Dubai Frame 2.webp";
-import dubai_frame_3 from "../assets/activity_images/Dubai Frame 3.webp";
-import dubai_frame_4 from "../assets/activity_images/Dubai Frame 4.webp";
-import hot_air_ballon_1 from "../assets/activity_images/Hot Air Balloon 1.webp";
-import hot_air_ballon_2 from "../assets/activity_images/Hot Air Balloon 2.webp";
-import miracle_garden_1 from "../assets/activity_images/Miracle Garden Dubai 1.webp";
-import miracle_garden_2 from "../assets/activity_images/Miracle Garden Dubai 2.webp";
-import miracle_garden_3 from "../assets/activity_images/Miracle Garden Dubai 3.webp";
-import miracle_garden_4 from "../assets/activity_images/Miracle Garden Dubai 4.webp";
-import future_museum_1 from "../assets/activity_images/Museum Of The Future 1.webp";
-import future_museum_2 from "../assets/activity_images/Museum Of The Future 2.webp";
-import future_museum_3 from "../assets/activity_images/Museum Of The Future 3.webp";
-import skydiving_1 from "../assets/activity_images/Skydiving 1.webp";
-import skydiving_2 from "../assets/activity_images/Skydiving 2.webp";
-import jetsky_1 from "../assets/activity_images/Jet-ski 1.webp";
-import jetsky_2 from "../assets/activity_images/jet-ski-2.webp";
+import abu_dhabhi_1 from "../assets/activity_images/abu_dhabhi.webp";
+import burj_khalifa_1 from "../assets/activity_images/burj_khalifa_1.webp";
+import burj_khalifa_2 from "../assets/activity_images/burj_khalifa_2.webp";
+import burj_al_arab_1 from "../assets/activity_images/burj_al_arab_tour_1.webp";
+import burj_al_arab_2 from "../assets/activity_images/burj_al_arab_tour_2.webp";
+import atlantis_waterpark_1 from "../assets/activity_images/atlantis_waterpark_1.webp";
+import atlantis_waterpark_2 from "../assets/activity_images/atlantis_waterpark_2.webp";
+import jet_car_1 from "../assets/activity_images/jet_car_dubai.webp";
+import jet_ski_1 from "../assets/activity_images/jet_ski_1.webp";
+import jet_ski_2 from "../assets/activity_images/jet_ski_2.webp";
+import legoland_1 from "../assets/activity_images/legoland_1.webp";
+import legoland_2 from "../assets/activity_images/legoland_2.webp";
+import scuba_diving_1 from "../assets/activity_images/scuba_diving_1.webp";
+import scuba_diving_2 from "../assets/activity_images/scuba_diving_2.webp";
+import wild_wadi_1 from "../assets/activity_images/wild_wadi_1.webp";
+import wild_wadi_2 from "../assets/activity_images/wild_wadi_2.webp";
+import wild_wadi_3 from "../assets/activity_images/wild_wadi_3.webp";
+import yas_waterpark_1 from "../assets/activity_images/yas_waterworld_1.webp";
+import yas_waterpark_2 from "../assets/activity_images/yas_waterworld_2.webp";
+import evening_desert_safari_1 from "../assets/activity_images/evening_desert_safari.webp";
+import dune_buggy_1 from "../assets/activity_images/dune_buggy_1.webp";
+import dune_buggy_2 from "../assets/activity_images/dune_buggy_2.webp";
+import overnight_desert_safari from "../assets/activity_images/overnight_desert_safari.webp";
+import lotus_yacht_1 from "../assets/activity_images/lotus_mega_yacht_dinner_cruise.webp";
+import luxury_yacht_1 from "../assets/activity_images/luxury_yacht_rental_dubai.webp";
+import dinner_in_sky_1 from "../assets/activity_images/dinner_in_sky.webp";
+import deep_dive_1 from "../assets/activity_images/deep_dive_dubai .webp";
+import helicopter_1 from "../assets/activity_images/helicopter_1.webp";
+import helicopter_2 from "../assets/activity_images/helicopter_2.webp";
+import ifly_1 from "../assets/activity_images/ifly_dubai.webp";
+import new_year_party_1 from "../assets/activity_images/new_year_party.webp";
+import sunrise_balloon_1 from "../assets/activity_images/sunrise_with_hot_air_balloon.webp";
+import dubai_balloon_1 from "../assets/activity_images/the_dubai_balloon_at_atlantis.webp";
+import storm_coaster_1 from "../assets/activity_images/the_storm_coaster_dubai.webp";
+import xline_1 from "../assets/activity_images/xline_dubai.webp";
+import museum_3d_1 from "../assets/activity_images/3d_world_museum_1.webp";
+import museum_3d_2 from "../assets/activity_images/3d_world_museum_2.webp";
+import aya_universe_1 from "../assets/activity_images/aya_universe.webp";
+import chillout_1 from "../assets/activity_images/chill_out_lounge.webp";
+import dolphin_bay_1 from "../assets/activity_images/dolphin_bay.webp";
+import aquarium_1 from "../assets/activity_images/dubai_aquarium_1.webp";
+import aquarium_2 from "../assets/activity_images/dubai_aquarium_2.webp";
+import crocodile_park_1 from "../assets/activity_images/dubai_crocodile_park_1.webp";
+import crocodile_park_2 from "../assets/activity_images/dubai_crocodile_park_2.webp";
+import dubai_dolphinarium_1 from "../assets/activity_images/dubai_dolphinarium.webp";
+import dubai_frame_1 from "../assets/activity_images/dubai_frame_1.webp";
+import dubai_frame_2 from "../assets/activity_images/dubai_frame_1.webp";
+import global_village_1 from "../assets/activity_images/global_village_1.webp";
+import global_village_2 from "../assets/activity_images/global_village_2.webp";
+import miracle_garden_1 from "../assets/activity_images/miracle_garden.webp";
+import museum_of_illusions_1 from "../assets/activity_images/museum_illusion_1.webp";
+import museum_of_illusions_2 from "../assets/activity_images/museum_illusion_2.webp";
+import future_museum_1 from "../assets/activity_images/future_museum.webp";
+import qasr_al_watan_1 from "../assets/activity_images/qasr_al_watan.webp";
+import ski_dubai_1 from "../assets/activity_images/ski_dubai_1.webp";
+import ski_dubai_2 from "../assets/activity_images/ski_dubai_1.webp";
+import sky_view_1 from "../assets/activity_images/sky_view_1.webp";
+import sky_view_2 from "../assets/activity_images/sky_view_2.webp";
+import green_planet_1 from "../assets/activity_images/green_planet.webp";
+import lost_chamber_1 from "../assets/activity_images/lost_chamber_1.webp";
+import lost_chamber_2 from "../assets/activity_images/lost_chamber_2.webp";
+import palm_jumeirah_1 from "../assets/activity_images/the_view_palm_jumerirah.webp";
 
 const activityData = {
   1: {
     title: "Abu Dhabi City Tour With Ferrari Or Yas Transfers",
-    images: [burj_al_arab_1, burj_al_arab_2, burj_al_arab_3],
+    images: [abu_dhabhi_1],
     about: [
       {
         content:
@@ -57,7 +88,7 @@ const activityData = {
   },
   2: {
     title: "Burj Khalifa Tour",
-    images: [burj_khalifa_1, burj_khalifa_2, burj_khalifa_3],
+    images: [burj_khalifa_1, burj_khalifa_2],
     about: [
       {
         content:
@@ -119,6 +150,7 @@ const activityData = {
   },
   3: {
     title: "Guided Inside Burj Al Arab Tour",
+    images: [burj_al_arab_1, burj_al_arab_2],
     about: [
       {
         content:
@@ -159,6 +191,7 @@ const activityData = {
   },
   4: {
     title: "Atlantis Waterpark",
+    images: [atlantis_waterpark_1, atlantis_waterpark_2],
     about: [
       {
         content:
@@ -183,6 +216,7 @@ const activityData = {
   },
   5: {
     title: "Jet Car Dubai",
+    images: [jet_car_1],
     about: [
       {
         content: "Catch Unhindered Views over the Ever-Evolving City Skyline.",
@@ -218,6 +252,7 @@ const activityData = {
   },
   6: {
     title: "Jet Ski",
+    images: [jet_ski_1, jet_ski_2],
     about: [
       {
         content:
@@ -248,6 +283,7 @@ const activityData = {
   },
   7: {
     title: "Legoland Water Park",
+    images: [legoland_1, legoland_2],
     about: [
       {
         content:
@@ -277,9 +313,9 @@ const activityData = {
       },
     ],
   },
-
   8: {
     title: "Scuba Diving Tour",
+    images: [scuba_diving_1, scuba_diving_2],
     about: [
       {
         content:
@@ -320,9 +356,9 @@ const activityData = {
       },
     ],
   },
-
   9: {
     title: "Wild Wadi Water Park",
+    images: [wild_wadi_1, wild_wadi_2, wild_wadi_3],
     about: [
       {
         content:
@@ -366,9 +402,9 @@ const activityData = {
       },
     ],
   },
-
   10: {
     title: "Yas Water World From Dubai",
+    images: [yas_waterpark_1, yas_waterpark_2],
     about: [
       {
         content:
@@ -393,9 +429,9 @@ const activityData = {
       },
     ],
   },
-
   11: {
     title: "Evening Desert Safari",
+    images: [evening_desert_safari_1],
     about: [
       {
         content:
@@ -483,9 +519,9 @@ const activityData = {
       },
     ],
   },
-
   12: {
     title: "Dune Buggy Dubai",
+    images: [dune_buggy_1, dune_buggy_2],
     about: [
       {
         content:
@@ -532,9 +568,9 @@ const activityData = {
       },
     ],
   },
-
   13: {
     title: "Overnight Desert Safari",
+    images: [overnight_desert_safari],
     about: [
       {
         content:
@@ -578,9 +614,9 @@ const activityData = {
       },
     ],
   },
-
   14: {
     title: "Lotus Mega Yacht Dinner Cruise",
+    images: [lotus_yacht_1],
     about: [
       {
         content:
@@ -607,9 +643,9 @@ const activityData = {
       },
     ],
   },
-
   15: {
     title: "Luxury Yacht Rental Dubai",
+    images: [luxury_yacht_1],
     about: [
       {
         title: "Enjoy the Highest Standards of Yachting",
@@ -638,9 +674,9 @@ const activityData = {
       },
     ],
   },
-
   16: {
     title: "Dinner in the sky",
+    images: [dinner_in_sky_1],
     about: [
       {
         content:
@@ -684,6 +720,7 @@ const activityData = {
   },
   17: {
     title: "Deep Dive Dubai",
+    images: [deep_dive_1],
     about: [
       {
         content:
@@ -727,9 +764,9 @@ const activityData = {
       },
     ],
   },
-
   18: {
     title: "Dubai Helicopter Tours",
+    images: [helicopter_1, helicopter_2],
     about: [
       {
         content:
@@ -759,9 +796,9 @@ const activityData = {
       },
     ],
   },
-
   19: {
     title: "IFLY Dubai",
+    images: [ifly_1],
     about: [
       {
         content:
@@ -784,9 +821,9 @@ const activityData = {
       },
     ],
   },
-
   20: {
     title: "New Year Party In Dubai",
+    images: [new_year_party_1],
     about: [
       {
         content:
@@ -844,9 +881,9 @@ const activityData = {
       },
     ],
   },
-
   21: {
-    title: "Sunrise With Hot  Balloon Flight",
+    title: "Sunrise With Hot Balloon Flight",
+    images: [sunrise_balloon_1],
     about: [
       {
         content:
@@ -891,9 +928,9 @@ const activityData = {
       },
     ],
   },
-
   22: {
     title: "The Dubai Balloon At Atlantisk",
+    images: [dubai_balloon_1],
     about: [
       {
         content:
@@ -920,9 +957,9 @@ const activityData = {
       },
     ],
   },
-
   23: {
     title: "The Storm Coaster Dubai",
+    images: [storm_coaster_1],
     about: [
       {
         content:
@@ -940,9 +977,9 @@ const activityData = {
       },
     ],
   },
-
   24: {
     title: "XLine Dubai Marina",
+    images: [xline_1],
     about: [
       {
         content:
@@ -967,9 +1004,9 @@ const activityData = {
       },
     ],
   },
-
   25: {
     title: "3D World Selfie Museum",
+    images: [museum_3d_1, museum_3d_2],
     about: [
       {
         content:
@@ -994,9 +1031,9 @@ const activityData = {
       },
     ],
   },
-
   26: {
     title: "AYA Universe Dubai",
+    images: [aya_universe_1],
     about: [
       {
         content:
@@ -1014,9 +1051,9 @@ const activityData = {
       },
     ],
   },
-
   27: {
     title: "Chillout Ice Lounge Dubai",
+    images: [chillout_1],
     about: [
       {
         content:
@@ -1074,9 +1111,9 @@ const activityData = {
       },
     ],
   },
-
   28: {
     title: "Dolphin Bay Atlantis",
+    images: [dolphin_bay_1],
     about: [
       {
         content:
@@ -1108,9 +1145,9 @@ const activityData = {
       },
     ],
   },
-
   29: {
     title: "Dubai Aquarium And Underwater Zoo",
+    images: [aquarium_1, aquarium_2],
     about: [
       {
         subheading: "The Dubai Aquarium:",
@@ -1145,9 +1182,9 @@ const activityData = {
       },
     ],
   },
-
   30: {
     title: "Dubai Crocodile Park",
+    images: [crocodile_park_1, crocodile_park_2],
     about: [
       {
         content:
@@ -1171,9 +1208,9 @@ const activityData = {
       },
     ],
   },
-
   31: {
     title: "Dubai Dolphinarium",
+    images: [dubai_dolphinarium_1],
     about: [
       {
         subheading: "Dolphin and Seal Shows:",
@@ -1208,9 +1245,9 @@ const activityData = {
       },
     ],
   },
-
   32: {
     title: "Dubai Frame",
+    images: [dubai_frame_1, dubai_frame_2],
     about: [
       {
         content:
@@ -1252,9 +1289,9 @@ const activityData = {
       },
     ],
   },
-
   33: {
     title: "Global Village Dubai",
+    images: [global_village_1, global_village_2],
     about: [
       {
         content:
@@ -1300,9 +1337,9 @@ const activityData = {
       },
     ],
   },
-
   34: {
     title: "Miracle Garden Dubai",
+    images: [miracle_garden_1],
     about: [
       {
         subheading: "Spectacular Displays:",
@@ -1330,9 +1367,9 @@ const activityData = {
       },
     ],
   },
-
   35: {
     title: "Museum Of Illusions",
+    images: [museum_of_illusions_1, museum_of_illusions_2],
     about: [
       {
         content:
@@ -1368,9 +1405,9 @@ const activityData = {
       },
     ],
   },
-
   36: {
     title: "Museum of the Future",
+    images: [future_museum_1],
     about: [
       {
         content:
@@ -1388,9 +1425,9 @@ const activityData = {
       },
     ],
   },
-
   37: {
     title: "Qasr Al Watan Abu Dhabi",
+    images: [qasr_al_watan_1],
     about: [
       {
         content:
@@ -1417,9 +1454,9 @@ const activityData = {
       },
     ],
   },
-
   38: {
     title: "Ski Dubai Tickets",
+    images: [ski_dubai_1, ski_dubai_2],
     about: [
       {
         content:
@@ -1553,9 +1590,9 @@ const activityData = {
       },
     ],
   },
-
   39: {
     title: "Sky Views Dubai",
+    images: [sky_view_1, sky_view_2],
     about: [
       {
         content:
@@ -1580,9 +1617,9 @@ const activityData = {
       },
     ],
   },
-
   40: {
     title: "The Green Planet Dubai",
+    images: [green_planet_1],
     about: [
       {
         content:
@@ -1596,9 +1633,9 @@ const activityData = {
       },
     ],
   },
-
   41: {
     title: "The Lost Chambers Aquarium Tickets",
+    images: [lost_chamber_1, lost_chamber_2],
     about: [
       {
         content:
@@ -1629,9 +1666,9 @@ const activityData = {
       },
     ],
   },
-
   42: {
     title: "The View At The Palm Jumeirah Dubai",
+    images: [palm_jumeirah_1],
     about: [
       {
         content:
